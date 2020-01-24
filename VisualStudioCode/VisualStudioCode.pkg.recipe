@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Packages the latest version of Visual Studio Code.</string>
+    <key>Identifier</key>
+    <string>com.github.ubiquitouschris.pkg.vscode</string>
+    <key>Input</key>
+    <dict>
+       <key>NAME</key>
+       <string>Visual Studio Code</string>
+    </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.ubiquitouschris.download.vscode</string>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack/Visual Studio Code.app/Contents/Info.plist</string>
+                <key>plist_version_key</key>
+                <string>CFBundleShortVersionString</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+                <key>app_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack/Visual Studio Code.app</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PathDeleter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>path_list</key>
+                <array>
+                    <string>%RECIPE_CACHE_DIR%/unpack</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
