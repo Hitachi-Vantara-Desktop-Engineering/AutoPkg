@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>VLC</string>
+       <string>VLC media player</string>
        <key>DOWNLOADURL</key>
        <string>https://dl.google.com/chrome/mac/stable/GGRO/vlc.dmg</string>
     </dict>
