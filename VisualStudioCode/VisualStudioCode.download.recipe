@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>Visual Studio Code</string>
+       <string>Microsoft Visual Studio Code</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
