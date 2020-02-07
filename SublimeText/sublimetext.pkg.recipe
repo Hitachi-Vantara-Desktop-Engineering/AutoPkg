@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads latest version of Sublime Text.</string>
+    <key>Identifier</key>
+    <string>com.github.ubiquitouschris.pkg.sublimetext</string>
+    <key>Input</key>
+    <dict>
+       <key>NAME</key>
+       <string>Sublime Text 3</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.ubiquitouschris.download.sublimetext</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://www.sublimetext.com/3</string>
+                <key>re_pattern</key>
+                <string>[\d.]+ \(Build [0-9]*\)</string>
+                <key>re_flags</key>
+                <array>
+                    <string>IGNORECASE</string>
+                </array>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>app_path</key>
+                <string>%pathname%/Sublime Text.app</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.pkg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>FileMover</string>
+            <key>Arguments</key>
+            <dict>
+                <key>source</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%.pkg</string>
+                <key>target</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%-%match%.pkg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PathDeleter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>path_list</key>
+                <array>
+                    <string>%RECIPE_CACHE_DIR%/payload</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
