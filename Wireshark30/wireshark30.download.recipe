@@ -5,11 +5,11 @@
     <key>Description</key>
     <string>Downloads latest version of Wireshark.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.wireshark</string>
+    <string>com.github.ubiquitouschris.download.wireshark30</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>Wireshark</string>
+       <string>Wireshark 3.0</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
@@ -23,7 +23,7 @@
                 <key>url</key>
                 <string>https://www.wireshark.org/download.html</string>
                 <key>re_pattern</key>
-                <string>href="https:\/\/[^"]*(?P&lt;match&gt;osx/Wireshark[^"]*Intel[^"]*64\.dmg)"</string>
+                <string>href="(https://1.na.dl.wireshark.org/osx/Wireshark%203.0.[0-9]*%20Intel%2064.dmg)"</string>
                 <key>re_flags</key>
                 <array>
                     <string>IGNORECASE</string>
@@ -36,7 +36,7 @@
            <key>Arguments</key>
            <dict>
               <key>url</key>
-              <string>https://www.wireshark.org/download/%match%</string>
+              <string>%match%</string>
               <key>filename</key>
               <string>%NAME%.dmg</string>
            </dict>
