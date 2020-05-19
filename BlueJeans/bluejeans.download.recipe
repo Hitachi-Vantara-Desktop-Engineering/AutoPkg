@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest version of Android Studio.</string>
+    <string>Downloads latest version of BlueJeans.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.androidstudio</string>
+    <string>com.github.ubiquitouschris.download.bluejeans</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>Android Studio</string>
+       <string>BlueJeans</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
@@ -21,9 +21,9 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://developer.android.com/studio</string>
+                <string>https://www.bluejeans.com/downloads</string>
                 <key>re_pattern</key>
-                <string>href="(https://[^"]*/android-studio-ide-[^"]*-mac.dmg)"</string>
+                <string>href="(https://swdl.bluejeans.com/desktop-app/mac/[^"]*/[^"]*/BlueJeansInstaller).dmg"</string>
                 <key>re_flags</key>
                 <array>
                     <string>IGNORECASE</string>
@@ -36,7 +36,9 @@
            <key>Arguments</key>
            <dict>
               <key>url</key>
-              <string>%match%</string>
+              <string>%match%.pkg</string>
+              <key>filename</key>
+              <string>%NAME%.pkg</string>
            </dict>
         </dict>
         <dict>
@@ -49,9 +51,13 @@
            <key>Arguments</key>
            <dict>
               <key>input_path</key>
-              <string>%pathname%/%NAME%.app</string>
-              <key>requirement</key>
-              <string>identifier "com.google.android.studio" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
+              <string>%pathname%</string>
+              <key>expected_authority_names</key>
+              <array>
+                  <string>Developer ID Installer: Blue Jeans Network, Inc. (HE4P42JBGN)</string>
+                  <string>Developer ID Certification Authority</string>
+                  <string>Apple Root CA</string>
+              </array>
            </dict>
         </dict>
     </array>

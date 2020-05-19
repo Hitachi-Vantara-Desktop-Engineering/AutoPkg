@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads latest version of DisplayLink USB Graphics Software.</string>
+    <key>Identifier</key>
+    <string>com.github.ubiquitouschris.pkg.displaylinkdrivers</string>
+    <key>Input</key>
+    <dict>
+       <key>NAME</key>
+       <string>DisplayLink USB Graphics Software 3</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.ubiquitouschris.download.displaylinkdrivers</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://www.displaylink.com/downloads/macos</string>
+                <key>re_pattern</key>
+                <string>Release:\s*([\d.]+)</string>
+                <key>result_output_var_name</key>
+                <string>version</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Copier</string>
+            <key>Arguments</key>
+            <dict>
+                <key>source_path</key>
+                <string>%pathname%/DisplayLink Software Installer.pkg</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
