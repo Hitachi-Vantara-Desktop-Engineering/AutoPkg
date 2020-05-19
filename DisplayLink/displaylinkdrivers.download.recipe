@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest version of Android Studio.</string>
+    <string>Downloads latest version of DisplayLink USB Graphics Software.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.androidstudio</string>
+    <string>com.github.ubiquitouschris.download.displaylinkdrivers</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>Android Studio</string>
+       <string>DisplayLink USB Graphics Software</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
@@ -21,9 +21,9 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://developer.android.com/studio</string>
+                <string>https://www.displaylink.com/downloads/macos</string>
                 <key>re_pattern</key>
-                <string>href="(https://[^"]*/android-studio-ide-[^"]*-mac.dmg)"</string>
+                <string>href="/downloads/file\?id=([^"]*)"</string>
                 <key>re_flags</key>
                 <array>
                     <string>IGNORECASE</string>
@@ -35,8 +35,18 @@
            <string>URLDownloader</string>
            <key>Arguments</key>
            <dict>
+               <key>curl_opts</key>
+                <array>
+                    <string>-F</string>
+                    <string>fileId=%match%</string>
+                    <string>-F</string>
+                    <string>accept_submit=Accept</string>
+                    <string>--location</string>
+                </array>
               <key>url</key>
-              <string>%match%</string>
+              <string>https://www.displaylink.com/downloads/file?id=%match%</string>
+              <key>filename</key>
+              <string>%NAME%.dmg</string>
            </dict>
         </dict>
         <dict>
@@ -49,9 +59,13 @@
            <key>Arguments</key>
            <dict>
               <key>input_path</key>
-              <string>%pathname%/%NAME%.app</string>
-              <key>requirement</key>
-              <string>identifier "com.google.android.studio" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = EQHXZ8M8AV</string>
+              <string>%pathname%/DisplayLink Software Installer.pkg</string>
+              <key>expected_authority_names</key>
+              <array>
+                  <string>Developer ID Installer: DisplayLink Corp (73YQY62QM3)</string>
+                  <string>Developer ID Certification Authority</string>
+                  <string>Apple Root CA</string>
+              </array>
            </dict>
         </dict>
     </array>
