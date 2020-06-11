@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Google Chrome.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.googlechrome</string>
+    <string>com.github.hitachivantara.download.googlechrome</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

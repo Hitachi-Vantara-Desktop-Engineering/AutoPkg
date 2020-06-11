@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Packages the latest version of Atom.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.atom</string>
+    <string>com.github.hitachivantara.pkg.atom</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
        <string>Atom</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.atom</string>
+    <string>com.github.hitachivantara.download.atom</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

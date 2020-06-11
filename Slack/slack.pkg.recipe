@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Packages the latest version of Slack.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.slack</string>
+    <string>com.github.hitachivantara.pkg.slack</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
         <string>Slack</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.slack</string>
+    <string>com.github.hitachivantara.download.slack</string>
     <key>MinimumVersion</key>
     <string>1.4.1</string>
     <key>Process</key>

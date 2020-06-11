@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Packages the latest version of Visual Studio Code.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.vscode</string>
+    <string>com.github.hitachivantara.pkg.vscode</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
        <string>Microsoft Visual Studio Code</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.vscode</string>
+    <string>com.github.hitachivantara.download.vscode</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

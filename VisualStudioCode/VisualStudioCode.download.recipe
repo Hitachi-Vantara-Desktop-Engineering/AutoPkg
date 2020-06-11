@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Visual Studio Code.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.vscode</string>
+    <string>com.github.hitachivantara.download.vscode</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

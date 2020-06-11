@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages the latest version of Brave Browser.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.bravebrowser</string>
+    <string>com.github.hitachivantara.jss.bravebrowser</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -16,7 +16,7 @@
        <string>Productivity</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.bravebrowser</string>
+    <string>com.github.hitachivantara.pkg.bravebrowser</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

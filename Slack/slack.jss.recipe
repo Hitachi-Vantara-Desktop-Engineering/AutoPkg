@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Uploads the latest version of Slack.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.slack</string>
+    <string>com.github.hitachivantara.jss.slack</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -16,7 +16,7 @@
         <string>Social Networking</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.slack</string>
+    <string>com.github.hitachivantara.pkg.slack</string>
     <key>MinimumVersion</key>
     <string>1.4.1</string>
     <key>Process</key>

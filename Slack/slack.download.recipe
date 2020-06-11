@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Slack.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.slack</string>
+    <string>com.github.hitachivantara.download.slack</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

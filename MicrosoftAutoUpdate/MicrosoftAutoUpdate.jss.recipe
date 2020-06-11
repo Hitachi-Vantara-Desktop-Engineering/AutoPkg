@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Uploads the latest version of Microsoft AutoUpdate to Jamf Pro.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.microsoftautoupdate</string>
+    <string>com.github.hitachivantara.jss.microsoftautoupdate</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -22,7 +22,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.microsoftautoupdate</string>
+    <string>com.github.hitachivantara.download.microsoftautoupdate</string>
     <key>Process</key>
     <array>
         <dict>

@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Uploads the latest version of Postman.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.postman</string>
+    <string>com.github.hitachivantara.pkg.postman</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
        <string>Postman</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.postman</string>
+    <string>com.github.hitachivantara.download.postman</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

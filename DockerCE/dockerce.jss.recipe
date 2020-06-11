@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Uploads the latest version of Docker CE.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.dockerce</string>
+    <string>com.github.hitachivantara.jss.dockerce</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -16,7 +16,7 @@
         <string>Developer Tools</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.dockerce</string>
+    <string>com.github.hitachivantara.pkg.dockerce</string>
     <key>MinimumVersion</key>
     <string>1.4.1</string>
     <key>Process</key>

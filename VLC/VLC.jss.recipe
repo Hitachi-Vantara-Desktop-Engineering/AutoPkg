@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of VLC.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.vlc</string>
+    <string>com.github.hitachivantara.jss.vlc</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -16,7 +16,7 @@
        <string>Video</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.vlc</string>
+    <string>com.github.hitachivantara.pkg.vlc</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

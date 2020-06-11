@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Node.js.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.nodejs</string>
+    <string>com.github.hitachivantara.jss.nodejs</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.nodejs</string>
+    <string>com.github.hitachivantara.pkg.nodejs</string>
     <key>Process</key>
     <array>
         <dict>

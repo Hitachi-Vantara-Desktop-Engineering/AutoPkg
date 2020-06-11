@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of Adobe Acrobat Reader DC.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.adobereaderdc</string>
+    <string>com.github.hitachivantara.pkg.adobereaderdc</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

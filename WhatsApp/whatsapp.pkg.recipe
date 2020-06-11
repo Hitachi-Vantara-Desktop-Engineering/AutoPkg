@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Packages the latest version of WhatsApp.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.whatsapp</string>
+    <string>com.github.hitachivantara.pkg.whatsapp</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
        <string>WhatsApp</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.whatsapp</string>
+    <string>com.github.hitachivantara.download.whatsapp</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

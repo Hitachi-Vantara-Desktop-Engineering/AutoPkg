@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Yammer.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.microsoft.yammer</string>
+    <string>com.github.hitachivantara.jss.microsoft.yammer</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -20,7 +20,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.microsoft.yammer</string>
+    <string>com.github.hitachivantara.pkg.microsoft.yammer</string>
     <key>Process</key>
     <array>
         <dict>

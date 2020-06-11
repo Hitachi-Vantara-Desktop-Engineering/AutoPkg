@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Uploads latest version of GoToMeeting.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.gotomeeting</string>
+    <string>com.github.hitachivantara.jss.gotomeeting</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.gotomeeting</string>
+    <string>com.github.hitachivantara.pkg.gotomeeting</string>
     <key>Process</key>
     <array>
         <dict>

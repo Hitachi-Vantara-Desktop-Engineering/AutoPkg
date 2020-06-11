@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages the latest version of Parallels Desktop.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.parallelsdesktop</string>
+    <string>com.github.hitachivantara.jss.parallelsdesktop</string>
     <key>Input</key>
     <dict>
         <key>MAJOR_VERSION</key>

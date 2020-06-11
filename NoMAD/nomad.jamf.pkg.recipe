@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of NoMAD and it's launch agent.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.jamf.nomad</string>
+    <string>com.github.hitachivantara.pkg.jamf.nomad</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.jamf.nomad</string>
+    <string>com.github.hitachivantara.download.jamf.nomad</string>
     <key>Process</key>
     <array>
         <dict>

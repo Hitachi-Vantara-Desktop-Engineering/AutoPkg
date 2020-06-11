@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of PowerShell.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.PowerShell</string>
+    <string>com.github.hitachivantara.pkg.PowerShell</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.PowerShell</string>
+    <string>com.github.hitachivantara.download.PowerShell</string>
     <key>Process</key>
     <array>
         <dict>

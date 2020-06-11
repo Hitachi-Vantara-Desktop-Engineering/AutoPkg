@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Uploads latest version of Atlassian SourceTree.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.atlassiansourcetree</string>
+    <string>com.github.hitachivantara.jss.atlassiansourcetree</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.atlassiansourcetree</string>
+    <string>com.github.hitachivantara.pkg.atlassiansourcetree</string>
     <key>Process</key>
     <array>
         <dict>

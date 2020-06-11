@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Wireshark.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.wireshark30</string>
+    <string>com.github.hitachivantara.download.wireshark30</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

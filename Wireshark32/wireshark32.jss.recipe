@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages the latest version of Wireshark.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.wireshark32</string>
+    <string>com.github.hitachivantara.jss.wireshark32</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -16,7 +16,7 @@
        <string>Developer Tools</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.wireshark32</string>
+    <string>com.github.hitachivantara.pkg.wireshark32</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

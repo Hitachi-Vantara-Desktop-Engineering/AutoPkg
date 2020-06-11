@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of KeePassX.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.KeePassX</string>
+    <string>com.github.hitachivantara.download.KeePassX</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

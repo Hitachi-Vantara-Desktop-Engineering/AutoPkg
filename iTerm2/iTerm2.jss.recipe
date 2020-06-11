@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of iTerm2.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.iterm2</string>
+    <string>com.github.hitachivantara.jss.iterm2</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -16,7 +16,7 @@
        <string>Developer Tools</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.iterm2</string>
+    <string>com.github.hitachivantara.pkg.iterm2</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

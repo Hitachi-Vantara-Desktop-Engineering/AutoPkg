@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Packages the latest version of VLC.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.vlc</string>
+    <string>com.github.hitachivantara.pkg.vlc</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
        <string>VLC media player</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.vlc</string>
+    <string>com.github.hitachivantara.download.vlc</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>
