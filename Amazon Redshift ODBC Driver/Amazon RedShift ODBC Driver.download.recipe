@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Amazon Redshift ODBC driver</string>
+    <key>Identifier</key>
+    <string>com.github.hitachivantara.download.AmazonRedshiftODBCDriver</string>
+    <key>Input</key>
+    <dict>
+       <key>NAME</key>
+       <string>Amazon Redshift ODBC driver</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://docs.aws.amazon.com/redshift/latest/mgmt/configure-odbc-connection.html</string>
+                <key>re_pattern</key>
+                <string>href="(https://s3.amazonaws.com/redshift-downloads/drivers/odbc/[^""]*/AmazonRedshiftODBC-[^""]*.dmg)"</string>
+                <key>re_flags</key>
+                <array>
+                    <string>IGNORECASE</string>
+                </array>
+            </dict>
+        </dict>
+        <dict>
+           <key>Processor</key>
+           <string>URLDownloader</string>
+           <key>Arguments</key>
+           <dict>
+              <key>url</key>
+              <string>%match%</string>
+              <key>filename</key>
+              <string>%NAME%.dmg</string>
+           </dict>
+        </dict>
+        <dict>
+           <key>Processor</key>
+           <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+           <key>Processor</key>
+           <string>CodeSignatureVerifier</string>
+           <key>Arguments</key>
+           <dict>
+              <key>input_path</key>
+              <string>%pathname%/*.pkg</string>
+              <key>expected_authority_names</key>
+              <array>
+                  <string>Developer ID Installer: AMZN Mobile LLC (94KV3E626L)</string>
+                  <string>Developer ID Certification Authority</string>
+                  <string>Apple Root CA</string>
+              </array>
+           </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
