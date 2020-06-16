@@ -3,27 +3,28 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Packages latest version of Atom.</string>
+    <string>Packages latest version of Airtame.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jss.atom</string>
+    <string>com.github.hitachivantara.pkg.airtame</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>Atom</string>
-       <key>prod_name</key>
-       <string>%NAME%</string>
-       <key>category</key>
-       <string>Developer Tools</string>
+       <string>Airtame</string>
     </dict>
-    <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.atom</string>
     <key>MinimumVersion</key>
-    <string>1.4.0</string>
+    <string>2.1</string>
+    <key>ParentRecipe</key>
+    <string>com.github.hitachivantara.download.airtame</string>
     <key>Process</key>
     <array>
         <dict>
             <key>Processor</key>
-            <string>JSSImporter</string>
+            <string>AppPkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>app_path</key>
+                <string>%pathname%/Airtame.app</string>
+            </dict>
         </dict>
         <dict>
             <key>Processor</key>
