@@ -12,7 +12,7 @@
        <string>Atom</string>
        <key>prod_name</key>
        <string>%NAME%</string>
-       <key>CATEGORY</key>
+       <key>category</key>
        <string>Developer Tools</string>
     </dict>
     <key>ParentRecipe</key>
@@ -24,11 +24,6 @@
         <dict>
             <key>Processor</key>
             <string>JSSImporter</string>
-            <key>Arguments</key>
-            <dict>
-                <key>CATEGORY</key>
-                <string>%CATEGORY%</string>
-            </dict>
         </dict>
         <dict>
             <key>Processor</key>
