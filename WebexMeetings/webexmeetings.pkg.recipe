@@ -40,7 +40,7 @@
             <key>Arguments</key>
             <dict>
                 <key>pkg_payload_path</key>
-                <string>%RECIPE_CACHE_DIR%/unpack/webex.pkg/Payload</string>
+                <string>%RECIPE_CACHE_DIR%/unpack/Cisco Webex Meetings Cloud.pkg/Payload</string>
                 <key>destination_path</key>
                 <string>%RECIPE_CACHE_DIR%/payload</string>
                 <key>purge_destination</key>
