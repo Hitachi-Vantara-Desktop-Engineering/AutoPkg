@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Packages the latest version of Brave Browser.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.bravebrowser</string>
+    <string>com.github.hitachivantara.pkg.bravebrowser</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
        <string>Brave Browser 3.2</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.bravebrowser</string>
+    <string>com.github.hitachivantara.download.bravebrowser</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

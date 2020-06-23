@@ -5,18 +5,18 @@
     <key>Description</key>
     <string>Packages latest version of Atom.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.atom</string>
+    <string>com.github.hitachivantara.jss.atom</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
        <string>Atom</string>
        <key>prod_name</key>
        <string>%NAME%</string>
-       <key>CATEGORY</key>
+       <key>category</key>
        <string>Developer Tools</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.atom</string>
+    <string>com.github.hitachivantara.pkg.atom</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>
@@ -24,11 +24,6 @@
         <dict>
             <key>Processor</key>
             <string>JSSImporter</string>
-            <key>Arguments</key>
-            <dict>
-                <key>CATEGORY</key>
-                <string>%CATEGORY%</string>
-            </dict>
         </dict>
         <dict>
             <key>Processor</key>

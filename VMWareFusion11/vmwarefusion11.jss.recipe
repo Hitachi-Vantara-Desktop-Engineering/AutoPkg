@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages the latest version of VMWare Fusion.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.vmwarefusion11</string>
+    <string>com.github.hitachivantara.jss.vmwarefusion11</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Virtual Box.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.virtualbox52</string>
+    <string>com.github.hitachivantara.download.virtualbox52</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of Wireshark.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.citrixworkspace</string>
+    <string>com.github.hitachivantara.pkg.citrixworkspace</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.citrixworkspace</string>
+    <string>com.github.hitachivantara.download.citrixworkspace</string>
     <key>Process</key>
     <array>
         <dict>

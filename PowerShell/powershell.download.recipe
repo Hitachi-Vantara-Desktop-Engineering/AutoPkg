@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of PowerShell.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.PowerShell</string>
+    <string>com.github.hitachivantara.download.PowerShell</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

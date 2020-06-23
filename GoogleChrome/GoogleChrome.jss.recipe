@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of Google Chrome.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.googlechrome</string>
+    <string>com.github.hitachivantara.jss.googlechrome</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -16,7 +16,7 @@
        <string>Productivity</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.googlechrome</string>
+    <string>com.github.hitachivantara.pkg.googlechrome</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

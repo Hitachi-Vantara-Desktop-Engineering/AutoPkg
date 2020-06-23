@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Uploads the latest NoMAD package to Jamf Pro.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.jamf.nomad</string>
+    <string>com.github.hitachivantara.jss.jamf.nomad</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -22,7 +22,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.jamf.nomad</string>
+    <string>com.github.hitachivantara.pkg.jamf.nomad</string>
     <key>Process</key>
     <array>
         <dict>

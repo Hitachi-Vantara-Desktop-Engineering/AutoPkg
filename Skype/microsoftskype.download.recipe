@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Skype.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.skype</string>
+    <string>com.github.hitachivantara.download.skype</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

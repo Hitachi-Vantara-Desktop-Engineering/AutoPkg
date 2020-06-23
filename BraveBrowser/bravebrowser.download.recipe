@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Brave Browser.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.bravebrowser</string>
+    <string>com.github.hitachivantara.download.bravebrowser</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

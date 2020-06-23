@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of oom Plugin for Microsoft Outlook..</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.zoomosp</string>
+    <string>com.github.hitachivantara.pkg.zoomosp</string>
     <key>Input</key>
     <dict>
         <key>NAME</key>
@@ -16,7 +16,7 @@
         <string>Zoom Plugin for Microsoft Outlook</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.zoomosp</string>
+    <string>com.github.hitachivantara.download.zoomosp</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

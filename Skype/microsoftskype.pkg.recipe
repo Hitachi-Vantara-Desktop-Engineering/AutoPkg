@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of Skype.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.skype</string>
+    <string>com.github.hitachivantara.pkg.skype</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.skype</string>
+    <string>com.github.hitachivantara.download.skype</string>
     <key>Process</key>
     <array>
         <dict>

@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of The Unarchiver.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.theunarchiver</string>
+    <string>com.github.hitachivantara.download.theunarchiver</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

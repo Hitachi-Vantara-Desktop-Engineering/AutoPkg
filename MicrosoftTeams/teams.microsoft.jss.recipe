@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Microsoft Teams.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.microsoft.Teams</string>
+    <string>com.github.hitachivantara.jss.microsoft.Teams</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -22,7 +22,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.microsoft.Teams</string>
+    <string>com.github.hitachivantara.pkg.microsoft.Teams</string>
     <key>Process</key>
     <array>
         <dict>

@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Zoom Plugin for Microsoft Outlook.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.zoomosp</string>
+    <string>com.github.hitachivantara.download.zoomosp</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

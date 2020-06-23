@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Generates a package for Cisco Webex Meetings.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.webexmeetings</string>
+    <string>com.github.hitachivantara.pkg.webexmeetings</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -18,7 +18,7 @@
        <string>Cisco Webex Meetings.pkg</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.webexmeetings</string>
+    <string>com.github.hitachivantara.download.webexmeetings</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

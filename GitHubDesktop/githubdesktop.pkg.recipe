@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of GitHub Desktop.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.pkg.githubdesktop</string>
+    <string>com.github.hitachivantara.pkg.githubdesktop</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -16,7 +16,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.githubdesktop</string>
+    <string>com.github.hitachivantara.download.githubdesktop</string>
     <key>Process</key>
     <array>
         <dict>

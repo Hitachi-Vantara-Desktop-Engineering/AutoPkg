@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages the latest version of Tunnelblick.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.tunnelblick</string>
+    <string>com.github.hitachivantara.jss.tunnelblick</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -16,7 +16,7 @@
        <string>Utilities</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.pkg.tunnelblick</string>
+    <string>com.github.hitachivantara.pkg.tunnelblick</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

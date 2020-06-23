@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of GoToMeeting.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.download.gotomeeting</string>
+    <string>com.github.hitachivantara.download.gotomeeting</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>

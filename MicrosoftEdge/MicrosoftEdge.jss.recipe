@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads latest version of Microsoft Edge.</string>
     <key>Identifier</key>
-    <string>com.github.ubiquitouschris.jss.microsoftedge</string>
+    <string>com.github.hitachivantara.jss.microsoftedge</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -20,7 +20,7 @@
        <string>Productivity</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.ubiquitouschris.download.microsoftedge</string>
+    <string>com.github.hitachivantara.download.microsoftedge</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>
