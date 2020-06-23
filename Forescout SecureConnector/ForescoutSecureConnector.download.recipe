@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Downloads latest version of ForeScout SecureConnector.</string>
+    <key>Identifier</key>
+    <string>com.github.hitachivantara.download.forescout.secureconnector</string>
+    <key>Input</key>
+    <dict>
+       <key>NAME</key>
+       <string>ForeScout SecureConnector</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLDownloader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://usdensecfsem02.corp.hds.com/SC_packages/update.tgz</string>
+                <key>curl_opts</key>
+                <array>
+                    <string>--insecure</string>
+                </array>
+            </dict>
+        </dict>
+        <dict>
+           <key>Processor</key>
+           <string>EndOfCheckPhase</string>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Unarchiver</string>
+            <key>Arguments</key>
+            <dict>
+                <key>archive_path</key>
+                <string>%pathname%</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack</string>
+            </dict>
+        </dict>
+        <dict>
+           <key>Processor</key>
+           <string>CodeSignatureVerifier</string>
+           <key>Arguments</key>
+           <dict>
+              <key>input_path</key>
+              <string>%RECIPE_CACHE_DIR%/unpack/Update/ForeScout SecureConnector.app</string>
+              <key>strict_verification</key>
+              <false/>
+              <key>requirement</key>
+              <string>identifier "com.forescout.secure_connector" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "7XDRPMNEZ5"</string>
+           </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
