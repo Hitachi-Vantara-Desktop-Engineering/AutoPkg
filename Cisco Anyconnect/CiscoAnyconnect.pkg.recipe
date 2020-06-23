@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>Cisco Anyconnect Secure Mobility Client</string>
+       <string>Cisco AnyConnect Secure Mobility Client</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
