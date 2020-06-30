@@ -16,7 +16,7 @@
        <string>Netskope</string>
        <key>prod_name</key>
        <string>%NAME%</string>
-       <key>CATEGORY</key>
+       <key>category</key>
        <string>Utilities</string>
     </dict>
     <key>MinimumVersion</key>
