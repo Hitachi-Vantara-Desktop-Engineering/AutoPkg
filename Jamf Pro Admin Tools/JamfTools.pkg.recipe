@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Packages the latest version of Jamf Pro tools.</string>
+    <key>Identifier</key>
+    <string>com.github.hitachivantara.pkg.jamfpro</string>
+    <key>Input</key>
+    <dict>
+       <key>NAMEX</key>
+       <string>Jamf Tools</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Jamf Admin.app/Contents/Info.plist</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>app_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Jamf Admin.app</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/Jamf Admin-%version%.pkg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Jamf Remote.app/Contents/Info.plist</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>app_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Jamf Remote.app</string>
+                <key>bundleid</key>
+                <string>com.jamfsoftware.JamfRemote</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/Jamf Remote-%version%.pkg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Jamf Imaging.app/Contents/Info.plist</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>app_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Jamf Imaging.app</string>
+                <key>bundleid</key>
+                <string>com.jamfsoftware.JamfImaging</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/Jamf Imaging-%version%.pkg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Composer.app/Contents/Info.plist</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>app_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Composer.app</string>
+                <key>bundleid</key>
+                <string>com.jamfsoftware.Composer</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/Composer-%version%.pkg</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Recon.app/Contents/Info.plist</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>AppPkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>app_path</key>
+                <string>%RECIPE_CACHE_DIR%/JamfPro.dmg/Jamf Pro/Recon.app</string>
+                <key>bundleid</key>
+                <string>com.jamfsoftware.Recon</string>
+                <key>pkg_path</key>
+                <string>%RECIPE_CACHE_DIR%/Recon-%version%.pkg</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
