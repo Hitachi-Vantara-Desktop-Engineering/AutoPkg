@@ -34,7 +34,7 @@
                 <key>prod_name</key>
                 <string>Jamf Admin</string>
                 <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR/Jamf Admin-%version%.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/Jamf Admin-%version%.pkg</string>
             </dict>
         </dict>
         <dict>
@@ -54,7 +54,7 @@
                 <key>prod_name</key>
                 <string>Jamf Remote</string>
                 <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR/Jamf Remote-%version%.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/Jamf Remote-%version%.pkg</string>
             </dict>
         </dict>
         <dict>
@@ -74,7 +74,7 @@
                 <key>prod_name</key>
                 <string>Jamf Imaging</string>
                 <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR/Jamf Imaging-%version%.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/Jamf Imaging-%version%.pkg</string>
             </dict>
         </dict>
         <dict>
@@ -94,7 +94,7 @@
                 <key>prod_name</key>
                 <string>Composer</string>
                 <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR/Composer-%version%.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/Composer-%version%.pkg</string>
             </dict>
         </dict>
         <dict>
@@ -114,7 +114,7 @@
                 <key>prod_name</key>
                 <string>Recon</string>
                 <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR/Recon-%version%.pkg</string>
+                <string>%RECIPE_CACHE_DIR%/Recon-%version%.pkg</string>
             </dict>
         </dict>
     </array>
