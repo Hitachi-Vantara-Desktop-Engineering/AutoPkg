@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Creates the package for updating Word</string>
+    <key>Identifier</key>
+    <string>com.github.hitachivantara.pkg.microsoft.word</string>
+    <key>Input</key>
+    <dict>
+        <key>NAME</key>
+        <string>Microsoft Word 365</string>
+        <key>VENDOR</key>
+        <string>Microsoft</string>
+        <key>SOFTWARETITLE</key>
+        <string>AutoUpdate</string>
+        <key>prod_name</key>
+        <string>%NAME%</string>
+        <key>CATEGORY</key>
+		<string>Productivity</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.hitachivantara.download.microsoft.word</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>FlatPkgUnpacker</string>
+            <key>Arguments</key>
+            <dict>
+                <key>flat_pkg_path</key>
+                <string>%pathname%</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PkgPayloadUnpacker</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_payload_path</key>
+                <string>%RECIPE_CACHE_DIR%/unpack/Microsoft_Word.pkg/Payload</string>
+                <key>destination_path</key>
+                <string>%RECIPE_CACHE_DIR%/payload</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>Versioner</string>
+            <key>Arguments</key>
+            <dict>
+                <key>input_plist_path</key>
+                <string>%RECIPE_CACHE_DIR%/payload/Microsoft Word.app/Contents/Info.plist</string>
+                <key>plist_version_key</key>
+                <string>CFBundleVersion</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PkgRootCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkgroot</key>
+                <string>%RECIPE_CACHE_DIR%/roottmp</string>
+                <key>pkgdirs</key>
+                <dict/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PkgRootCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkgroot</key>
+                <string>%RECIPE_CACHE_DIR%/Scripts</string>
+                <key>pkgdirs</key>
+                <dict/>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>FileCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>file_content</key>
+                <string>#!/bin/zsh
+###############################################################################
+# Variables
+###############################################################################
+CONSOLE_USER="$(/usr/bin/stat -f %Su /dev/console)"
+
+PRODUCT_CODE="MSWD2019"
+PROCESS="Microsoft Word"
+
+MSUPDATE_BIN="/Library/Application Support/Microsoft/MAU2.0/Microsoft AutoUpdate.app/Contents/MacOS/msupdate"
+
+###############################################################################
+# Functions
+###############################################################################
+
+checkForAndCloseApp()
+{
+    if [[ ! -z "$(/usr/bin/pgrep -x "$PROCESS")" ]]; then
+        echo "Asking $PROCESS to close..."
+        /usr/bin/osascript -e 'with timeout of 300 seconds' -e 'tell application "'"$PROCESS"'" to quit' -e 'end timeout'
+
+        echo "Forcing $PROCESS to close..."
+        if [[ ! -z "$(/usr/bin/pgrep -x "$PROCESS")" ]];then
+            /usr/bin/killall -9 "$PROCESS"
+        fi
+    fi
+}
+
+installUpdate()
+{
+    echo "INFO: Attempting to download update"
+    /bin/launchctl asuser $(/usr/bin/id -u $CONSOLE_USER) "$MSUPDATE_BIN" --install --apps "$PRODUCT_CODE"
+
+    if [[ "$?" != "0" ]]; then
+        echo "ERROR: Failed to donwload and install $PROCESS $VERSION"
+        exit 10
+    fi
+}
+
+checkIfUpdateHasCompleted()
+{
+    INSTALLED_VERSION=$(/usr/bin/defaults read "/Applications/$PROCESS.app/Contents/Info.plist" CFBundleVersion)
+
+    if is-at-least "$VERSION" "$INSTALLED_VERSION"; then
+        return 1
+    else
+        return 0
+    fi
+}
+
+
+###############################################################################
+# Start Script
+###############################################################################
+autoload is-at-least
+
+checkForAndCloseApp
+installUpdate
+
+echo "Update has completed..."
+###############################################################################
+# End Script
+###############################################################################
+exit 0
+                </string>
+                <key>file_path</key>
+                <string>%RECIPE_CACHE_DIR%/Scripts/postinstall</string>
+                <key>file_mode</key>
+                <string>0755</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PkgCreator</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_request</key>
+                <dict>
+                    <key>pkgroot</key>
+                    <string>%RECIPE_CACHE_DIR%/roottmp</string>
+                    <key>pkgdir</key>
+                    <string>%RECIPE_CACHE_DIR%</string>
+                    <key>pkgname</key>
+                    <string>%NAME%-%version%</string>
+                    <key>id</key>
+                    <string>com.hitachivantara.microsoft.word.updater.%version%</string>
+                    <key>scripts</key>
+                    <string>%RECIPE_CACHE_DIR%/Scripts</string>
+                </dict>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PathDeleter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>path_list</key>
+                <array>
+                    <string>%RECIPE_CACHE_DIR%/roottmp</string>
+                    <string>%RECIPE_CACHE_DIR%/Scripts</string>
+                    <string>%RECIPE_CACHE_DIR%/unpack</string>
+                    <string>%RECIPE_CACHE_DIR%/payload</string>
+                </array>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
