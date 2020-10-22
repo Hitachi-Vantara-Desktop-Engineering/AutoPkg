@@ -17,7 +17,7 @@
        <key>PRODUCTID</key>
        <string>868963</string>
        <key>DOWNLOADURL</key>
-       <string>https://go.microsoft.com/fwlink/?linkid=%PRODUCTID%</string>
+       <string>https://officecdn-microsoft-com.akamaized.net/pr/C1297A47-86C4-4C1F-97FA-950631F94777/MacAutoupdate/Microsoft_Remote_Desktop_10.4.1_installer.pkg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
