@@ -36,9 +36,9 @@
            <key>Arguments</key>
            <dict>
               <key>url</key>
-              <string>https://www.wireshark.org/download/%match%</string>
+              <string>https://wireshark.marwan.ma/download/osx/Wireshark%203.2.8%20Intel%2064.dmg</string>
               <key>filename</key>
-              <string>%NAME%.dmg</string>
+              <string>Wireshark%203.2.8%20Intel%2064.dmg</string>
            </dict>
         </dict>
         <dict>
