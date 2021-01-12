@@ -9,7 +9,7 @@
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>VMware Horizon Client 7</string>
+       <string>VMware Horizon 7 Client</string>
        <key>prod_name</key>
        <string>%NAME%</string>
        <key>CATEGORY</key>
