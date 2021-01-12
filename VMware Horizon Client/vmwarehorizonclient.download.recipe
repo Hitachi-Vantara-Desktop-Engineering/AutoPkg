@@ -3,9 +3,9 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest version of GoToMeeting.</string>
+    <string>Downloads version 5.5.0 of VMware Horizon Client.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.download.</string>
+    <string>com.github.hitachivantara.download.vmwarehorizonclient</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
