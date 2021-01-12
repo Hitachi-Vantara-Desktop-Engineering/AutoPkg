@@ -20,7 +20,7 @@
             <string>URLDownloader</string>
             <key>Arguments</key>
             <dict>
-                <key>direct_url</key>
+                <key>url</key>
 				<string>https://download3.vmware.com/software/view/viewclients/CART21FQ3/VMware-Horizon-Client-5.5.0-16962730.dmg</string>
                 <key>filename</key>
                 <string>VMware-Horizon-Client-5.5.0-16962730.dmg</string>
