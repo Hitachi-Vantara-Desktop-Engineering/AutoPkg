@@ -11,7 +11,7 @@
        <key>NAME</key>
        <string>VLC media player</string>
        <key>DOWNLOADURL</key>
-       <string>https://dl.google.com/chrome/mac/stable/GGRO/vlc.dmg</string>
+       <string>https://www.videolan.org/vlc/download-macosx.html</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
@@ -23,7 +23,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://www.videolan.org/vlc/</string>
+                <string>%DOWNLOADURL%</string>
                 <key>re_pattern</key>
                 <string>([\d.]*\/macosx\/vlc-[\d.]*.dmg)</string>
         	</dict>
