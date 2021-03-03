@@ -14,7 +14,7 @@
         <key>MAJOR_VERSION</key>
         <string>AcrobatDC</string>
         <key>OS_VERSION</key>
-        <string>10.13.0</string>
+        <string>11</string>
 		<key>NAME</key>
 		<string>AdobeReaderDC</string>
 	</dict>
