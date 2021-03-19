@@ -21,7 +21,7 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-		<string>https://download3.vmware.com/software/view/viewclients/CART21FQ3/VMware-Horizon-Client-5.5.0-16962730.dmg</string>
+		<string>https://download3.vmware.com/software/view/viewclients/CART21FQ3/VMware-Horizon-Client-5.5.1-17575406.dmg</string>
                 <key>filename</key>
                 <string>VMware-Horizon-Client-5.5.0-16962730.dmg</string>
 	    </dict>
