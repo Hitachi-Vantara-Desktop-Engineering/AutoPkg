@@ -57,7 +57,7 @@
                 <key>pkg_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
                 <key>app_path</key>
-                <string>%pathname%/Install TeamViewer.app/Contents/Resources/Install TeamViewer.pkg</string>
+                <string>%pathname%/Install TeamViewer.app</string>
             </dict>
         </dict>
     </array>
