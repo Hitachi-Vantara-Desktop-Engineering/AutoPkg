@@ -36,12 +36,12 @@
            <key>Arguments</key>
            <dict>
                 <key>input_path</key>
-				<string>%pathname%/Install TeamViewer.app/Contents/Resources/Install TeamViewer.pkg</string>
-				<key>expected_authority_names</key>
-				<array>
-					<string>Developer ID Installer: TeamViewer GmbH (H7UGFBUGV6)</string>
-					<string>Developer ID Certification Authority</string>
-					<string>Apple Root CA</string>
+		<string>%pathname%/Install TeamViewer.app/Contents/Resources/Install TeamViewer.pkg</string>
+		<key>expected_authority_names</key>
+		<array>
+			<string>Developer ID Installer: TeamViewer GmbH (H7UGFBUGV6)</string>
+			<string>Developer ID Certification Authority</string>
+			<string>Apple Root CA</string>
                </array>
            </dict>
         </dict>
