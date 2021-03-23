@@ -46,7 +46,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%pathname%/Install TeamViewer.pkg/Contents/Info.plist</string>
+                <string>%pathname%/Install TeamViewer.app/Contents/Resources/Install TeamViewer.pkg/Contents/Info.plist</string>
             </dict>
         </dict>
         <dict>
