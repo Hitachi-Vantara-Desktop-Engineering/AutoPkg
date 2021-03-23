@@ -17,14 +17,13 @@
     <string>com.github.hitachivantara.download.TeamViewer15</string>
     <key>Process</key>
     <array>
-        <!--
         <dict>
             <key>Processor</key>
             <string>FlatPkgUnpacker</string>
             <key>Arguments</key>
             <dict>
                 <key>flat_pkg_path</key>
-                <string>%pathname%/Install TeamViewer.pkg</string>
+                <string>%pathname%/Install TeamViewer.app/Contents/Resources/Install TeamViewer.pkg</string>
                 <key>destination_path</key>
                 <string>%RECIPE_CACHE_DIR%/unpack</string>
             </dict>
@@ -47,7 +46,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%pathname%/Install TeamViewer.app/Contents/Info.plist</string>
+                <string>%pathname%/Install TeamViewer.pkg/Contents/Info.plist</string>
             </dict>
         </dict>
         <dict>
@@ -58,7 +57,7 @@
                 <key>pkg_path</key>
                 <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
                 <key>app_path</key>
-                <string>%pathname%/Install TeamViewer.app</string>
+                <string>%pathname%/Install TeamViewer.app/Contents/Resources/Install TeamViewer.pkg</string>
             </dict>
         </dict>
     </array>
