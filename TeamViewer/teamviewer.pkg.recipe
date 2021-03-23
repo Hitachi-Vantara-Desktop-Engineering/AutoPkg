@@ -47,7 +47,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/Install TeamViewer.app/Contents/Info.plist</string>
+                <string>%pathname%/Install TeamViewer.app/Contents/Info.plist</string>
             </dict>
         </dict>
         <dict>
