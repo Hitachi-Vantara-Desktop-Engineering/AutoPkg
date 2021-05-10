@@ -10,6 +10,8 @@
     <dict>
         <key>MAJOR_VERSION</key>
 		<string>16</string>
+	<key>PLATFORM_ARCH</key>
+		<string>intel</string>    
        <key>NAME</key>
        <string>Parallels Desktop %MAJOR_VERSION%</string>
        <key>prod_name</key>
