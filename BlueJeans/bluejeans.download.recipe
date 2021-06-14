@@ -17,18 +17,6 @@
     <string>1.4.0</string>
     <key>Process</key>
     <array>
-          <dict>
-           <key>Processor</key>
-           <string>URLDownloader</string>
-           <key>Arguments</key>
-           <dict>
-              <key>url</key>
-              <string>https://swdl.bluejeans.com/desktop-app/mac/2.29.0/2.29.0.140/BlueJeansInstaller(x86_64).dmg</string>
-              <key>filename</key>
-              <string>%DMG_NAME%.dmg</string>
-           </dict>
-        </dict>
-        <!--
         <dict>
             <key>Processor</key>
             <string>URLTextSearcher</string>
@@ -44,7 +32,6 @@
                 </array>
             </dict>
         </dict>
-         -->
         <dict>
            <key>Processor</key>
            <string>URLDownloader</string>
