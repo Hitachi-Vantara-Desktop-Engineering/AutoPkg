@@ -23,7 +23,7 @@
            <key>Arguments</key>
            <dict>
               <key>url</key>
-              <stringhttps://swdl.bluejeans.com/desktop-app/mac/2.29.0/2.29.0.140/BlueJeansInstaller(x86_64).dmg</string>
+              <string>https://swdl.bluejeans.com/desktop-app/mac/2.29.0/2.29.0.140/BlueJeansInstaller(x86_64).dmg</string>
               <key>filename</key>
               <string>%DMG_NAME%.dmg</string>
            </dict>
