@@ -43,8 +43,8 @@
                     <string>IGNORECASE</string>
                 </array>
             </dict>
-            -->
         </dict>
+         -->
         <dict>
            <key>Processor</key>
            <string>URLDownloader</string>
