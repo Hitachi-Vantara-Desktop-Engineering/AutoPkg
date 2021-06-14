@@ -25,7 +25,7 @@
                 <key>url</key>
                 <string>%DOWNLOADURL%</string>
                 <key>re_pattern</key>
-                <string>([\d.]*\/macosx\/vlc-[\d.]*.dmg)</string>
+                <string>([\d.]*\/macosx\/vlc-[\d.]*\-intel64.dmg)</string>
         	</dict>
         </dict>
         <dict>
