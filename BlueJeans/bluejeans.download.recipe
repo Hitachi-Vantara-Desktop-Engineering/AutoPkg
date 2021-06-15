@@ -58,8 +58,8 @@
               <string>%pathname%/%APP_NAME%.app</string>
               <key>strict_verification</key>
               <false/>
-              <key>requirement</key> 
-              <string>identifier "com.deusty.CocoaLumberjack" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "HE4P42JBGN"</string> 
+              <key>requirement</key>
+              <string>identifier "com.deusty.CocoaLumberjack" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = HE4P42JBGN</string> 
            </dict>
         </dict>
     </array>
