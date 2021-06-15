@@ -10,8 +10,6 @@
     <dict>
        <key>NAME</key>
        <string>BlueJeans</string>
-        <key>APP_NAME</key>
-        <string>BlueJeansInstaller</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
@@ -55,7 +53,7 @@
            <key>Arguments</key>
            <dict>
               <key>input_path</key>
-              <string>%pathname%/%APP_NAME%.app</string>
+              <string>%pathname%/BlueJeansInstaller.app</string>
               <key>strict_verification</key>
               <false/>
               <key>requirement</key>
