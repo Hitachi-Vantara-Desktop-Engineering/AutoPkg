@@ -16,7 +16,7 @@ Version 8: horizon_8
 	<key>Input</key>
 	<dict>
 		<key>HORIZON_MAJOR_VERSION</key>
-		<string>horizon_8</string>
+		<string>horizon_7_5_0</string>
 	</dict>
 	<key>MinimumVersion</key>
 	<string>0.4.2</string>
