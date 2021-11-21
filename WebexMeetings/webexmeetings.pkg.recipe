@@ -15,7 +15,7 @@
        <key>SOFTWARETITLE</key>
        <string>Cisco Webex Meetings</string>
        <key>PKGNAME</key>
-       <string>Cisco Webex Meetings.pkg</string>
+       <string>Cisco_Webex_Meetings.pkg</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.hitachivantara.download.webexmeetings</string>
@@ -40,7 +40,7 @@
             <key>Arguments</key>
             <dict>
                 <key>pkg_payload_path</key>
-                <string>%RECIPE_CACHE_DIR%/unpack/Cisco Webex Meetings.pkg/Payload</string>
+                <string>%RECIPE_CACHE_DIR%/unpack/Cisco_Webex_Meetings.pkg/Payload</string>
                 <key>destination_path</key>
                 <string>%RECIPE_CACHE_DIR%/payload</string>
                 <key>purge_destination</key>
@@ -53,7 +53,7 @@
             <key>Arguments</key>
             <dict>
                 <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/payload/Cisco Webex Meetings.app/Contents/Info.plist</string>
+                <string>%RECIPE_CACHE_DIR%/payload/Cisco_Webex_Meetings.app/Contents/Info.plist</string>
                 <key>plist_version_key</key>
                 <string>CFBundleShortVersionString</string>
             </dict>
