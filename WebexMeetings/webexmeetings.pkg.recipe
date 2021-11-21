@@ -15,7 +15,7 @@
        <key>SOFTWARETITLE</key>
        <string>Cisco Webex Meetings</string>
        <key>PKGNAME</key>
-       <string>Cisco_Webex_Meetings.pkg</string>
+       <string>Cisco Webex Meetings.pkg</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.hitachivantara.download.webexmeetings</string>
