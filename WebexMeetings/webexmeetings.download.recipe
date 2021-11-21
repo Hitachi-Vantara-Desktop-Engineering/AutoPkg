@@ -17,7 +17,7 @@
        <key>DOWNLOADURL</key>
        <string>https://akamaicdn.webex.com/client/webexapp.dmg</string>
        <key>PKGNAME</key>
-       <string>Cisco Webex Meetings.pkg</string>
+       <string>Cisco_Webex_Meetings.pkg</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
