@@ -5,14 +5,14 @@
     <key>Description</key>
     <string>Packages the latest version of Wireshark.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.pkg.wireshark34</string>
+    <string>com.github.hitachivantara.pkg.wireshark36</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>Wireshark 3.4</string>
+       <string>Wireshark 3.6</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.download.wireshark34</string>
+    <string>com.github.hitachivantara.download.wireshark36</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>
