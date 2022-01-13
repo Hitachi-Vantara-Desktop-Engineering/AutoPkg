@@ -3,13 +3,13 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest version of zoom.us.</string>
+    <string>Downloads latest version of Zoom Client for Meetings</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jss.zoom.us</string>
+    <string>com.github.hitachivantara.jss.zoomclientformeetings</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>zoom.us</string>
+       <string>Zoom Client for Meetings</string>
        <key>VENDOR</key>
        <string>Zoom</string>
        <key>SOFTWARETITLE</key>
@@ -20,7 +20,7 @@
        <string>Social Networking</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.download.zoom.us</string>
+    <string>com.github.hitachivantara.download.zoomclientformeetings</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>
