@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>Description</key>
+    <string>Packages the latest version of Parallels Desktop.</string>
+    <key>Identifier</key>
+    <string>com.github.hitachivantara.jss.parallelsdesktop</string>
+    <key>Input</key>
+    <dict>
+        <key>MAJOR_VERSION</key>
+		<string>17</string>
+	<key>PLATFORM_ARCH</key>
+		<string>image</string>    
+       <key>NAME</key>
+       <string>Parallels Desktop %MAJOR_VERSION%</string>
+       <key>prod_name</key>
+       <string>%NAME%</string>
+       <key>CATEGORY</key>
+       <string>Productivity</string>
+    </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.homebysix.pkg.ParallelsDesktop</string>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>JSSImporter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>category</key>
+                <string>%CATEGORY%</string>
+            </dict>
+        </dict>
+    </array>
+</dict>
+</plist>
