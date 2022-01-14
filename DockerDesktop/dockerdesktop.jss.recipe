@@ -8,14 +8,14 @@
     <string>com.github.hitachivantara.jss.dockerdesktop</string>
     <key>Input</key>
     <dict>
-	    <key>PLATFORM_ARCH</key>
-		      <string>amd64</string>    
+       <key>PLATFORM_ARCH</key>
+		<string>amd64</string>    
        <key>NAME</key>
-          <string>Docker</string>
+         	<string>Docker</string>
        <key>prod_name</key>
-          <string>%NAME%</string>
+          	<string>%NAME%</string>
        <key>CATEGORY</key>
-          <string>Developer Tools</string>
+          	<string>Developer Tools</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.homebysix.pkg.DockerDesktop</string>
