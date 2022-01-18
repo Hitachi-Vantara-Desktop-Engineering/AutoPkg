@@ -5,18 +5,18 @@
     <key>Description</key>
     <string>Packages the latest version of TeamViewer.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jss.TeamViewer15</string>
+    <string>com.github.hitachivantara.jss.TeamViewer14</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>TeamViewer 15</string>
+       <string>TeamViewer 14</string>
        <key>prod_name</key>
        <string>%NAME%</string>
        <key>CATEGORY</key>
        <string>Utilities</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.TeamViewer15</string>
+    <string>com.github.hitachivantara.pkg.TeamViewer14</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>

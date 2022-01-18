@@ -5,16 +5,16 @@
     <key>Description</key>
     <string>Downloads latest version of TeamViewer.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.pkg.TeamViewer15</string>
+    <string>com.github.hitachivantara.pkg.TeamViewer14</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>TeamViewer 15</string>
+       <string>TeamViewer 14</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.download.TeamViewer15</string>
+    <string>com.github.hitachivantara.download.TeamViewer14</string>
     <key>Process</key>
     <array>
         <dict>
