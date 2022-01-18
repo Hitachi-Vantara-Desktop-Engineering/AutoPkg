@@ -2,78 +2,27 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Description</key>
-    <string>Downloads latest version of TeamViewer.</string>
-    <key>Identifier</key>
-    <string>com.github.hitachivantara.pkg.TeamViewer14</string>
-    <key>Input</key>
-    <dict>
-       <key>NAME</key>
-       <string>TeamViewer 14</string>
-       <key>PKGNAME</key>
-       <string>Install TeamViewer.pkg</string>
-    </dict>
-    <key>MinimumVersion</key>
-    <string>1.4.0</string>
-    <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.download.TeamViewer14</string>
-    <key>Process</key>
-    <array>
-        <dict>
-            <key>Processor</key>
-            <string>FlatPkgUnpacker</string>
-            <key>Arguments</key>
-            <dict>
-                <key>flat_pkg_path</key>
-                <string>%pathname%/%PKGNAME%</string>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/unpack</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>PkgPayloadUnpacker</string>
-            <key>Arguments</key>
-            <dict>
-                <key>pkg_payload_path</key>
-                <string>%RECIPE_CACHE_DIR%/unpack/Install TeamViewer.pkg/Payload</string>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/payload</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>Versioner</string>
-            <key>Arguments</key>
-            <dict>
-                <key>plist_version_key</key>
-                <string>CFBundleVersion</string>
-                <key>input_plist_path</key>
-                <string>%RECIPE_CACHE_DIR%/payload/TeamViewer.app/Contents/Info.plist</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>Copier</string>
-            <key>Arguments</key>
-            <dict>
-                <key>source_path</key>
-                <string>%pathname%/%PKGNAME%</string>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
-            <string>PathDeleter</string>
-            <key>Arguments</key>
-            <dict>
-                <key>path_list</key>
-                <array>
-                    <string>%RECIPE_CACHE_DIR%/unpack</string>
-                </array>
-            </dict>
-        </dict>
-    </array>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot)</string>
+	<key>Description</key>
+	<string>Downloads the latest version of TeamViewer and creates a package.</string>
+	<key>Identifier</key>
+	<string>com.github.hitachivantara.pkg.TeamViewer14</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>TeamViewer</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.hitachivantara.download.TeamViewer14</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Processor</key>
+			<string>AppPkgCreator</string>
+		</dict>
+	</array>
 </dict>
 </plist>
