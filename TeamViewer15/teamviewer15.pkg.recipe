@@ -39,7 +39,6 @@
                 <string>%RECIPE_CACHE_DIR%/payload/</string>
             </dict>
         </dict>
-        -->
         <dict>
             <key>Processor</key>
             <string>Versioner</string>
