@@ -7,7 +7,7 @@
     <key>Description</key>
     <string>Downloads the latest Adobe Reader DC.</string>
 	<key>Identifier</key>
-	<string>com.github.autopkg.download.AdobeReaderDC</string>
+	<string>com.github.hitachivantara.download.adobereaderdc</string>
 	<key>Input</key>
 	<dict>
 		<key>LANGUAGE</key>
