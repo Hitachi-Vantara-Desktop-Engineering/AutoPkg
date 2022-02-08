@@ -22,7 +22,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.download.adobereaderdc</string>
+    <string>com.github.autopkg.download.AdobeReaderDC</string>
     <key>Process</key>
     <array>
         <dict>
