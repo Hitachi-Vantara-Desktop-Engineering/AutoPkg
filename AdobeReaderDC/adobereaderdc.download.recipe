@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
 	<key>Comment</key>
-	<string>For OS_Version, 10.14.0 or 10.15.0 are valid, not 10.14 or 10.15 / https://github.com/autopkg/recipes/blob/master/AdobeReader/AdobeReaderDC.download.recipe</string>
+	<string>For OS_Version, 10.14.0 or 10.15.0 are valid, not 10.14 or 10.15</string>
     <key>Description</key>
     <string>Downloads the latest Adobe Reader DC.</string>
 	<key>Identifier</key>
