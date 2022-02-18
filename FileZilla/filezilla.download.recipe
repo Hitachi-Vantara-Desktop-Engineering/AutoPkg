@@ -23,7 +23,7 @@
                 <key>url</key>
                 <string>https://filezilla-project.org/download.php?show_all=1</string>
                 <key>re_pattern</key>
-                <string>href="(https:\/\/dl1.cdn.filezilla-project.org/client/FileZilla_[^"]*_macosx[^"]*)"</string>
+                <string>href="(https:\/\/dl1.cdn.filezilla-project.org/client/FileZilla_[^"]*_macosx.*)"</string>
                 <key>re_flags</key>
                 <array>
                     <string>IGNORECASE</string>
