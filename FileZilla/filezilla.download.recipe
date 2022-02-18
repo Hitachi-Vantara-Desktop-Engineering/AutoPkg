@@ -7,39 +7,33 @@
     <key>Identifier</key>
     <string>com.github.hitachivantara.download.filezilla</string>
     <key>Input</key>
-    	<dict>
-    		<key>NAME</key>
-    		<string>FileZilla</string>
-    		<key>RE_PATTERN</key>
-            <string>href="https:\/\/dl1.cdn.filezilla-project.org/client/FileZilla_[^"]*_macosx[^"]*"</string>
-    	</dict>
-    	<key>MinimumVersion</key>
-    	<string>1.0.0</string>
-    	<key>Process</key>
-    	<array>
-    		<dict>
-    			<key>Arguments</key>
-    			<dict>
-    				<key>re_pattern</key>
-    				<string>%RE_PATTERN%</string>
-    				<key>url</key>
-    				<string>https://filezilla-project.org/download.php?show_all=1</string>
-                    <key>re_flags</key>
-                    <array>
-                        <string>IGNORECASE</string>
-                    </array>
-    			</dict>
-    			<key>Processor</key>
-    			<string>URLTextSearcher</string>
-    		</dict>
-    		<dict>
-    			<key>Processor</key>
-    			<string>URLDownloader</string>
-    		</dict>
-    		<dict>
-    			<key>Processor</key>
-    			<string>EndOfCheckPhase</string>
-    		</dict>
+    <dict>
+       <key>NAME</key>
+       <string>FileZilla Client</string>
+    </dict>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>Process</key>
+    <array>
+        <dict>
+            <key>Processor</key>
+            <string>URLTextSearcher</string>
+            <key>Arguments</key>
+            <dict>
+                <key>url</key>
+                <string>https://filezilla-project.org/download.php?show_all=1</string>
+                <key>re_pattern</key>
+                <string>href="https:\/\/dl1.cdn.filezilla-project.org/client/FileZilla_[^"]*_macosx[^"]*"</string>
+                <key>re_flags</key>
+                <array>
+                    <string>IGNORECASE</string>
+                </array>
+            </dict>
+        </dict>
+        <dict>
+           <key>Processor</key>
+           <string>URLDownloader</string>
+        </dict>
         <dict>
             <key>Processor</key>
             <string>Unarchiver</string>
