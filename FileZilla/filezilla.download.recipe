@@ -23,7 +23,7 @@
                 <key>url</key>
                 <string>https://filezilla-project.org/download.php?show_all=1</string>
                 <key>re_pattern</key>
-                <string>a href="(?P<url>http[s]?.*?(?P<filename>FileZilla_(?P<version>[\d.]+)_macosx.*?\.tar\.bz2).*?)"</string>
+                <string>href="(?P<url>http[s]?.*?(?P<filename>FileZilla_(?P<version>[\d.]+)_macosx.*?\.tar\.bz2).*?)"</string>
                 <key>re_flags</key>
                 <array>
                     <string>IGNORECASE</string>
