@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest version of FileZilla Client.</string>
+    <string>Downloads latest version of FileZilla Client</string>
     <key>Identifier</key>
     <string>com.github.hitachivantara.download.filezilla</string>
     <key>Input</key>
