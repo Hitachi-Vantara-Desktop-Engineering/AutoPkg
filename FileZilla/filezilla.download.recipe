@@ -11,7 +11,7 @@
     		<key>NAME</key>
     		<string>FileZilla</string>
     		<key>RE_PATTERN</key>
-            <string>href="(https:\/\/dl1.cdn.filezilla-project.org/client/FileZilla_[^"]*_macosx[^"]*)"</string>
+            <string>href="https:\/\/dl1.cdn.filezilla-project.org/client/FileZilla_[^"]*_macosx[^"]*"</string>
     	</dict>
     	<key>MinimumVersion</key>
     	<string>1.0.0</string>
