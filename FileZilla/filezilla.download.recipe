@@ -3,7 +3,7 @@
 <plist version="1.0">
 <dict>
     <key>Description</key>
-    <string>Downloads latest version of FileZilla Client</string>
+    <string>Downloads latest version of FileZilla Client.</string>
     <key>Identifier</key>
     <string>com.github.hitachivantara.download.filezilla</string>
     <key>Input</key>
@@ -23,7 +23,7 @@
                 <key>url</key>
                 <string>https://filezilla-project.org/download.php?show_all=1</string>
                 <key>re_pattern</key>
-                <string>"(?P<url>http[s]?.*?(?P<filename>FileZilla_(?P<version>[\d.]+)_macosx.*?\.tar\.bz2).*?)"</string>
+                <string>"(?P&lt;url&gt;https://.*/client/FileZilla_.*_macosx-x86.*)"</string>
                 <key>re_flags</key>
                 <array>
                     <string>IGNORECASE</string>
