@@ -11,7 +11,7 @@
        <key>NAME</key>
        <string>Google Chrome</string>
        <key>DOWNLOADURL</key>
-       <string>https://dl.google.com/chrome/mac/stable/GGRO/googlechrome.dmg</string>
+       <string>https://chromeenterprise.google/browser/download/thank-you/?platform=MAC_DMG&channel=stable&usagestats=0&stage=retry&stage=retry#</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
