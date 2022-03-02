@@ -11,6 +11,8 @@
 	<key>Input</key>
 	<dict>
 		<key>NAME</key>
+		<string>Cisco Webex</string>
+		<key>FILENAME</key>
 		<string>Webex</string>
 		<key>VENDOR</key>
 		<string>Cisco</string>
@@ -25,7 +27,7 @@
 			<key>Arguments</key>
 			<dict>
 				<key>filename</key>
-				<string>%NAME%.dmg</string>
+				<string>%FILENAME%.dmg</string>
 				<key>url</key>
 				<string>https://binaries.webex.com/WebexTeamsDesktop-MACOS-Gold/Webex.dmg</string>
 			</dict>
