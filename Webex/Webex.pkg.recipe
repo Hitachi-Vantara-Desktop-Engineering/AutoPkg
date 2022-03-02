@@ -24,8 +24,8 @@
 			<string>Versioner</string>
 			<key>Arguments</key>
 			<dict>
-					<key>inut_plist_path</key>
-					<string>%pathname%/Webex.app/Contents/Info.plist</string>
+				<key>input_plist_path</key>
+				<string>%pathname%/Webex.app/Contents/Info.plist</string>
 			</dict>
 		</dict>
 		<dict>
@@ -33,10 +33,10 @@
 			<string>AppPkgCreator</string>
 			<key>Arguments</key>
 			<dict>
-					<key>pkg_path</key>
-					<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-					<key>app_path</key>
-					<string>%pathname%/Webex.app</string>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+				<key>app_path</key>
+				<string>%pathname%/Webex.app</string>
 			</dict>
 		</dict>
 	</array>
