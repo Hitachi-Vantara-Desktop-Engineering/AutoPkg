@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>Comment</key>
+	<string>Created with Recipe Robot v2.2.0 (https://github.com/homebysix/recipe-robot) - modified by JC</string>
+	<key>Description</key>
+	<string>Downloads the latest version of Webex and imports it into your JSS.</string>
+	<key>Identifier</key>
+	<string>com.github.hitachivantara.jss.webex</string>
+	<key>Input</key>
+	<dict>
+		<key>NAME</key>
+		<string>Cisco Webex</string>
+		<key>VENDOR</key>
+		<string>Cisco</string>
+		<key>SOFTWARETITLE</key>
+		<string>Cisco Webex</string>
+		<key>prod_name</key>
+		<string>%NAME%</string>
+		<key>CATEGORY</key>
+		<string>Social Networking</string>
+	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
+	<key>ParentRecipe</key>
+	<string>com.github.hitachivantara.pkg.webex</string>
+	<key>Process</key>
+	<array>
+		<dict>
+			<key>Arguments</key>
+			<dict>
+				<key>category</key>
+				<string>%CATEGORY%</string>
+				<key>pkg_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+			</dict>
+			<key>Processor</key>
+			<string>JSSImporter</string>
+		</dict>
+	</array>
+</dict>
+</plist>
