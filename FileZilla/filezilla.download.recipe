@@ -37,14 +37,18 @@
 			<string>EndOfCheckPhase</string>
 		</dict>
 		<dict>
-			<key>Processor</key>
-			<string>Unarchiver</string>
 			<key>Arguments</key>
 			<dict>
-				<key>purge_destination</key>
-				<true/>
-			</dict>
-		</dict>
+				<key>archive_format</key>
+				<string>tar_bzip2</string>
+                			<key>archive_path</key>
+					<string>%pathname%</string>
+                			<key>destination_path</key>
+                			<string>%RECIPE_CACHE_DIR%/unzip</string>
+            		</dict>
+            		<key>Processor</key>
+			<string>Unarchiver</string>
+        	</dict>
 		<dict>
 			<key>Processor</key>
 			<string>CodeSignatureVerifier</string>
