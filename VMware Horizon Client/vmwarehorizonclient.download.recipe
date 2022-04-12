@@ -12,7 +12,7 @@ Version 7 (5.0): horizon_7_5_0
 Version 8: horizon_8
 	</string>
 	<key>Identifier</key>
-	<string>com.github.scriptingosx.download.VMwareHorizonClient</string>
+	<string>com.github.hitachivantara.download.vmwarehorizonclient</string>
 	<key>Input</key>
 	<dict>
 		<key>HORIZON_MAJOR_VERSION</key>
