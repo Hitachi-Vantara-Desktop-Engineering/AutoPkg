@@ -21,9 +21,9 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-		<string>https://download3.vmware.com/software/view/viewclients/CART22FQ1/VMware-Horizon-Client-2103-8.2.0-17759009.dmg</string>
+		<string>https://download3.vmware.com/software/CART23FQ1_MAC_2203_1/VMware-Horizon-Client-2203.1-8.5.1-19641512.dmg</string>
                 <key>filename</key>
-                <string>VMware-Horizon-Client-2103-8.2.0-17759009.dmg</string>
+                <string>VMware-Horizon-Client-2203.1-8.5.1-19641512.dmg</string>
 	    </dict>
         </dict>
         <dict>

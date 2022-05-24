@@ -2,55 +2,33 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
 <dict>
-    <key>Description</key>
-    <string>Downloads latest version of FileZilla Client.</string>
-    <key>Identifier</key>
-    <string>com.github.hitachivantara.download.filezilla</string>
-    <key>Input</key>
+	<key>Description</key>
+	<string>Downloads the current version of FileZilla. Specify the channel via %NAME%.</string>
+	<key>Identifier</key>
+	<string>com.github.hitachivantara.download.filezilla</string>
+	<key>Input</key>
 	<dict>
 		<key>NAME</key>
 		<string>FileZilla</string>
-		<key>SEARCH_URL</key>
-		<string>https://filezilla-project.org/download.php?show_all=1</string>
-		<key>STOPPROCESSINGIF_PREDICATE</key>
-		<string>download_changed == FALSE</string>
+		<key>RE_PATTERN</key>
+		<string>&lt;a href=\"(?P&lt;url&gt;http[s]?.*?(?P&lt;filename&gt;FileZilla_(?P&lt;version&gt;[\d.]+)_macosx-x86.*?\.tar\.bz2).*?)\"</string>
 	</dict>
+	<key>MinimumVersion</key>
+	<string>1.0.0</string>
 	<key>Process</key>
 	<array>
 		<dict>
 			<key>Arguments</key>
 			<dict>
 				<key>re_pattern</key>
-				<string>\&lt;\p\&gt;The latest stable version of FileZilla Client is (?P&lt;dl_version&gt;.*)\&lt;\/p\&gt;</string>
-				<key>result_output_var_name</key>
-				<string>dl_version</string>
+				<string>%RE_PATTERN%</string>
 				<key>url</key>
-				<string>%SEARCH_URL%</string>
+				<string>https://filezilla-project.org/download.php?show_all=1</string>
 			</dict>
 			<key>Processor</key>
 			<string>URLTextSearcher</string>
 		</dict>
 		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>re_pattern</key>
-				<string>"(?P&lt;url&gt;https://.*/client/FileZilla_.*_macosx-x86.*)"</string>
-				<key>result_output_var_name</key>
-				<string>url</string>
-				<key>url</key>
-				<string>%SEARCH_URL%</string>
-			</dict>
-			<key>Processor</key>
-			<string>URLTextSearcher</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
-				<key>CHECK_FILESIZE_ONLY</key>
-				<true/>
-				<key>filename</key>
-				<string>%NAME%-%dl_version%.tar.bz2</string>
-			</dict>
 			<key>Processor</key>
 			<string>URLDownloader</string>
 		</dict>
@@ -61,38 +39,27 @@
 		<dict>
 			<key>Arguments</key>
 			<dict>
-				<key>predicate</key>
-				<string>%STOPPROCESSINGIF_PREDICATE%</string>
-			</dict>
-			<key>Processor</key>
-			<string>StopProcessingIf</string>
-		</dict>
-		<dict>
-			<key>Arguments</key>
-			<dict>
 				<key>archive_format</key>
 				<string>tar_bzip2</string>
-                <key>archive_path</key>
-                <string>%pathname%</string>
-                <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/unzip</string>
-            </dict>
-            <key>Processor</key>
+                			<key>archive_path</key>
+					<string>%pathname%</string>
+                			<key>destination_path</key>
+                			<string>%RECIPE_CACHE_DIR%/unzip</string>
+            		</dict>
+            		<key>Processor</key>
 			<string>Unarchiver</string>
-        </dict>
-        <dict>
-           <key>Processor</key>
-           <string>CodeSignatureVerifier</string>
-           <key>Arguments</key>
-           <dict>
-              <key>input_path</key>
-              <string>%RECIPE_CACHE_DIR%/unzip/FileZilla.app</string>
-              <key>strict_verification</key>
-              <false/>
-              <key>requirement</key>
-              <string>identifier "org.filezilla-project.filezilla" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "5VPGKXL75N"</string>
-           </dict>
-        </dict>
-    </array>
+        	</dict>
+		<dict>
+			<key>Processor</key>
+			<string>CodeSignatureVerifier</string>
+			<key>Arguments</key>
+			<dict>
+				<key>input_path</key>
+				<string>%RECIPE_CACHE_DIR%/%NAME%/FileZilla.app</string>
+				<key>requirement</key>
+				<string>identifier "org.filezilla-project.filezilla" and anchor apple generic and certificate 1[field.1.2.840.113635.100.6.2.6] /* exists */ and certificate leaf[field.1.2.840.113635.100.6.1.13] /* exists */ and certificate leaf[subject.OU] = "5VPGKXL75N"</string>
+			</dict>
+		</dict>
+	</array>
 </dict>
 </plist>
