@@ -23,17 +23,6 @@
     <array>
         <dict>
             <key>Processor</key>
-            <string>PathDeleter</string>
-            <key>Arguments</key>
-            <dict>
-                <key>path_list</key>
-                <array>
-                    <string>%RECIPE_CACHE_DIR%/payload</string>
-                </array>
-            </dict>
-        </dict>
-        <dict>
-            <key>Processor</key>
             <string>JSSImporter</string>
             <key>Arguments</key>
             <dict>
