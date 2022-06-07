@@ -11,7 +11,7 @@
        <key>CATEGORY</key>
        <string>Productivity</string>
        <key>SECOND_SMB</key>
-       <string>smb://plkrkfp01.corp.hds.com:139/JamfProRep$</string>
+       <string>smb://plkrkfp01.corp.hds.com/JamfProRep$</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.hitachivantara.pkg.mozillafirefox</string>
