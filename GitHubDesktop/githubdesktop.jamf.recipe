@@ -14,7 +14,7 @@
       <string>GitHub</string>
       <key>prod_name</key>
       <string>%NAME%</string>
-      <key>category</key>
+      <key>CATEGORY</key>
       <string>Developer Tools</string>
     </dict>
     <key>ParentRecipe</key>
