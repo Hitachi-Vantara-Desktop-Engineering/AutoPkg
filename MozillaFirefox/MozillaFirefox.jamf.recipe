@@ -12,6 +12,8 @@
        <string>Productivity</string>
        <key>SECOND_SMB</key>
        <string>smb://plkrkfp01.corp.hds.com/JamfProRep$</string>
+       <key>SECOND_SMB_USERNAME</key>
+       <string>casperadmin@plkrkfp01</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.hitachivantara.pkg.mozillafirefox</string>
@@ -35,6 +37,8 @@
                 <string>%CATEGORY%</string>
                 <key>SMB_URL</key>
 				<string>%SECOND_SMB%</string>
+                <key>SMB_USERNAME</key>
+				<string>%SECOND_SMB_USERNAME%</string>
             </dict>
         </dict>
     </array>
