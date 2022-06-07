@@ -10,6 +10,8 @@
     <dict>
        <key>CATEGORY</key>
        <string>Productivity</string>
+       <key>SECOND_SMB</key>
+       <string>smb://plkrkfp01.corp.hds.com:139/JamfProRep$</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.hitachivantara.pkg.mozillafirefox</string>
@@ -31,6 +33,8 @@
             <dict>
                 <key>pkg_category</key>
                 <string>%CATEGORY%</string>
+                <key>SMB_URL</key>
+				<string>%SECOND_SMB%</string>
             </dict>
         </dict>
     </array>
