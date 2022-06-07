@@ -18,15 +18,22 @@
     <key>ParentRecipe</key>
     <string>com.github.hitachivantara.pkg.googlechrome</string>
     <key>MinimumVersion</key>
-    <string>1.4.0</string>
+    <string>2.0</string>
     <key>Process</key>
     <array>
         <dict>
             <key>Processor</key>
-            <string>JSSImporter</string>
+            <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
             <key>Arguments</key>
             <dict>
                 <key>category</key>
+                <string>%CATEGORY%</string>
+            </dict>
+            <key>Processor</key>
+            <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+            <key>Arguments</key>
+            <dict>
+                <key>pkg_category</key>
                 <string>%CATEGORY%</string>
             </dict>
         </dict>
