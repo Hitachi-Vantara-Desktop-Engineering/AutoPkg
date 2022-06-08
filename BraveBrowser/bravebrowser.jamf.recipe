@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Description</key>
+    <string>Packages the latest version of Brave Browser.</string>
+    <key>Identifier</key>
+    <string>com.github.hitachivantara.jamf.bravebrowser</string>
+    <key>Input</key>
+    <dict>
+      <key>NAME</key>
+      <string>Brave Browser</string>
+      <key>prod_name</key>
+      <string>%NAME%</string>
+      <key>CATEGORY</key>
+      <string>Productivity</string>
+    </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.hitachivantara.pkg.bravebrowser</string>
+    <key>MinimumVersion</key>
+    <string>2.0</string>
+    <key>Process</key>
+    <array>
+      <dict>
+        <key>Processor</key>
+        <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+        <key>Arguments</key>
+        <dict>
+          <key>category</key>
+          <string>%CATEGORY%</string>
+        </dict>
+        <key>Processor</key>
+        <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+        <key>Arguments</key>
+        <dict>
+          <key>pkg_category</key>
+          <string>%CATEGORY%</string>
+        </dict>
+        <key>Processor</key>
+        <string>PathDeleter</string>
+        <key>Arguments</key>
+        <dict>
+          <key>path_list</key>
+          <array>
+            <string>%RECIPE_CACHE_DIR%/payload</string>
+          </array>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>
