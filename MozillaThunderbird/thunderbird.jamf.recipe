@@ -35,8 +35,6 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
-          <key>category</key>
-          <string>%CATEGORY%</string>
         </dict>
       </dict>
     </array>
