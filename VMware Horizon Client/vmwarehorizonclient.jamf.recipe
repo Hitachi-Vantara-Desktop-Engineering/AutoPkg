@@ -3,18 +3,22 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Packages latest version of Mozilla Firefox.</string>
+    <string>Packages the latest version of VMware Horizon Client.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.mozillafirefox</string>
+    <string>com.github.hitachivantara.jamf.vmwarehorizonclient</string>
     <key>Input</key>
     <dict>
+      <key>NAME</key>
+      <string>VMware Horizon Client</string>
+      <key>prod_name</key>
+      <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Productivity</string>
+      <string>Utilities</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.mozillafirefox</string>
+    <string>com.github.hitachivantara.pkg.vmwarehorizonclient</string>
     <key>MinimumVersion</key>
-    <string>2.0</string>
+    <string>1.4.0</string>
     <key>Process</key>
     <array>
       <dict>
@@ -31,6 +35,17 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>PathDeleter</string>
+        <key>Arguments</key>
+        <dict>
+          <key>path_list</key>
+          <array>
+            <string>%RECIPE_CACHE_DIR%/payload</string>
+          </array>
         </dict>
       </dict>
     </array>

@@ -3,16 +3,20 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Packages latest version of Mozilla Firefox.</string>
+    <string>Packages latest version of VLC.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.mozillafirefox</string>
+    <string>com.github.hitachivantara.jamf.vlc</string>
     <key>Input</key>
     <dict>
+      <key>NAME</key>
+      <string>VLC media player</string>
+      <key>prod_name</key>
+      <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Productivity</string>
+      <string>Video</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.mozillafirefox</string>
+    <string>com.github.hitachivantara.pkg.vlc</string>
     <key>MinimumVersion</key>
     <string>2.0</string>
     <key>Process</key>
