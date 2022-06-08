@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Description</key>
+    <string>Packages the latest version of Docker Desktop.</string>
+    <key>Identifier</key>
+    <string>com.github.hitachivantara.jamf.dockerdesktop</string>
+    <key>Input</key>
+    <dict>
+      <key>PLATFORM_ARCH</key>
+      <string>amd64</string>
+      <key>NAME</key>
+      <string>Docker Desktop</string>
+      <key>prod_name</key>
+      <string>%NAME%</string>
+      <key>CATEGORY</key>
+      <string>Developer Tools</string>
+    </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.homebysix.pkg.DockerDesktop</string>
+    <key>MinimumVersion</key>
+    <string>1.4.0</string>
+    <key>Process</key>
+    <array>
+      <dict>
+        <key>Processor</key>
+        <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
+        <key>Arguments</key>
+        <dict>
+          <key>category</key>
+          <string>%CATEGORY%</string>
+        </dict>
+        <key>Processor</key>
+        <string>com.github.grahampugh.jamf-upload.processors/JamfPackageUploader</string>
+        <key>Arguments</key>
+        <dict>
+          <key>pkg_category</key>
+          <string>%CATEGORY%</string>
+        </dict>
+      </dict>
+    </array>
+  </dict>
+</plist>
