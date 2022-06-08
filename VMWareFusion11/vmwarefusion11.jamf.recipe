@@ -3,16 +3,20 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Packages latest version of Mozilla Firefox.</string>
+    <string>Packages the latest version of VMWare Fusion.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.mozillafirefox</string>
+    <string>com.github.hitachivantara.jamf.vmwarefusion11</string>
     <key>Input</key>
     <dict>
+      <key>NAME</key>
+      <string>VMWare Fusion 11</string>
+      <key>prod_name</key>
+      <string>%NAME%</string>
       <key>CATEGORY</key>
       <string>Productivity</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.mozillafirefox</string>
+    <string>com.github.dataJAR-recipes.pkg.VMware Fusion 11</string>
     <key>MinimumVersion</key>
     <string>2.0</string>
     <key>Process</key>

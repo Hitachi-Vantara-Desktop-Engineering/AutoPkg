@@ -3,21 +3,32 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Packages latest version of Mozilla Firefox.</string>
+    <string>Downloads latest version of Virtual Box.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.mozillafirefox</string>
+    <string>com.github.hitachivantara.jamf.virtualbox52</string>
     <key>Input</key>
     <dict>
+      <key>NAME</key>
+      <string>VirtualBox 5.2</string>
+      <key>prod_name</key>
+      <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Productivity</string>
+      <string>Developer Tools</string>
     </dict>
-    <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.mozillafirefox</string>
     <key>MinimumVersion</key>
-    <string>2.0</string>
+    <string>1.4.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.hitachivantara.pkg.virtualbox52</string>
     <key>Process</key>
     <array>
       <dict>
+        <key>Arguments</key>
+        <dict>
+          <key>category</key>
+          <string>%CATEGORY%</string>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+        </dict>
         <key>Processor</key>
         <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
         <key>Arguments</key>

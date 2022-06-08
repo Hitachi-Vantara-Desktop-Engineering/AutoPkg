@@ -3,18 +3,22 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Packages latest version of Mozilla Firefox.</string>
+    <string>Uploads latest version of WhatsApp.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.mozillafirefox</string>
+    <string>com.github.hitachivantara.jamf.whatsapp</string>
     <key>Input</key>
     <dict>
-      <key>CATEGORY</key>
-      <string>Productivity</string>
+      <key>NAME</key>
+      <string>WhatsApp</string>
+      <key>prod_name</key>
+      <string>%NAME%</string>
+      <key>category</key>
+      <string>Social Networking</string>
     </dict>
-    <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.mozillafirefox</string>
     <key>MinimumVersion</key>
-    <string>2.0</string>
+    <string>1.4.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.hitachivantara.pkg.whatsapp</string>
     <key>Process</key>
     <array>
       <dict>

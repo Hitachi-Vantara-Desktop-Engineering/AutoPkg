@@ -3,18 +3,22 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Packages latest version of Mozilla Firefox.</string>
+    <string>Uploads latest version of Atlassian SourceTree.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.mozillafirefox</string>
+    <string>com.github.hitachivantara.jamf.atlassiansourcetree</string>
     <key>Input</key>
     <dict>
-      <key>CATEGORY</key>
-      <string>Productivity</string>
+      <key>NAME</key>
+      <string>Atlassian Sourcetree</string>
+      <key>prod_name</key>
+      <string>%NAME%</string>
+      <key>category</key>
+      <string>Developer Tools</string>
     </dict>
-    <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.mozillafirefox</string>
     <key>MinimumVersion</key>
-    <string>2.0</string>
+    <string>1.4.0</string>
+    <key>ParentRecipe</key>
+    <string>com.github.hitachivantara.pkg.atlassiansourcetree</string>
     <key>Process</key>
     <array>
       <dict>
@@ -31,6 +35,8 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
         </dict>
       </dict>
     </array>
