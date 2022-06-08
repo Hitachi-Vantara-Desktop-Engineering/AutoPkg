@@ -10,8 +10,6 @@
     <dict>
       <key>NAME</key>
       <string>Python 3</string>
-      <key>prod_name</key>
-      <string>%NAME%</string>
       <key>category</key>
       <string>Developer Tools</string>
     </dict>
