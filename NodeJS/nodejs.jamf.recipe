@@ -10,9 +10,7 @@
     <dict>
       <key>NAME</key>
       <string>Node.js</string>
-      <key>prod_name</key>
-      <string>%NAME%</string>
-      <key>category</key>
+      <key>CATEGORY</key>
       <string>Developer Tools</string>
     </dict>
     <key>MinimumVersion</key>
@@ -26,7 +24,7 @@
         <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
         <key>Arguments</key>
         <dict>
-          <key>category</key>
+          <key>CATEGORY</key>
           <string>%CATEGORY%</string>
         </dict>
         <key>Processor</key>
