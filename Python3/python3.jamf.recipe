@@ -10,7 +10,7 @@
     <dict>
       <key>NAME</key>
       <string>Python 3</string>
-      <key>category</key>
+      <key>CATEGORY</key>
       <string>Developer Tools</string>
     </dict>
     <key>MinimumVersion</key>
