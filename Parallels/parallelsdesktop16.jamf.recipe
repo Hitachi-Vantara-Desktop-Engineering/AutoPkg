@@ -3,22 +3,26 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Packages the latest version of Parallels Desktop.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.parallelsdesktop</string>
     <key>Input</key>
     <dict>
+      <key>MAJOR_VERSION</key>
+      <string>16</string>
+      <key>PLATFORM_ARCH</key>
+      <string>intel</string>
       <key>NAME</key>
-      <string>WhatsApp</string>
+      <string>Parallels Desktop %MAJOR_VERSION%</string>
       <key>prod_name</key>
       <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <string>Productivity</string>
     </dict>
-    <key>MinimumVersion</key>
-    <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
+    <string>com.github.homebysix.pkg.ParallelsDesktop</string>
+    <key>MinimumVersion</key>
+    <string>2.0</string>
     <key>Process</key>
     <array>
       <dict>

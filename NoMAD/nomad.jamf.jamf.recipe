@@ -3,25 +3,36 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Uploads the latest NoMAD package to Jamf Pro.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.jamf.nomad</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>WhatsApp</string>
+      <string>NoMAD</string>
+      <key>VENDOR</key>
+      <string>NoMAD</string>
+      <key>SOFTWARETITLE</key>
+      <string>NoMAD</string>
       <key>prod_name</key>
       <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <string>Utilities</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
+    <string>com.github.hitachivantara.pkg.jamf.nomad</string>
     <key>Process</key>
     <array>
       <dict>
+        <key>Arguments</key>
+        <dict>
+          <key>category</key>
+          <string>%CATEGORY%</string>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+        </dict>
         <key>Processor</key>
         <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
         <key>Arguments</key>

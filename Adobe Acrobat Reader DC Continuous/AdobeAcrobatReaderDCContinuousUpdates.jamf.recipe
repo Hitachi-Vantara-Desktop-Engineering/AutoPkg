@@ -3,22 +3,26 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Uploads latest version of Adobe Acrobat Reader DC.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.adobereaderdcupdates</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>WhatsApp</string>
+      <string>Adobe Acrobat Reader DC Continuous</string>
+      <key>VENDOR</key>
+      <string>Adobe</string>
+      <key>SOFTWARETITLE</key>
+      <string>Adobe Acrobat Reader DC Continuous</string>
       <key>prod_name</key>
       <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <string>Productivity</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
+    <string>com.github.hitachivantara.pkg.adobereaderdcupdates</string>
     <key>Process</key>
     <array>
       <dict>
@@ -35,6 +39,8 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
         </dict>
       </dict>
     </array>

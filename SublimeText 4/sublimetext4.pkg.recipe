@@ -3,18 +3,18 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Downloads latest version of BlueJeans.</string>
+    <string>Downloads the current release version of Sublime Text 4 and builds a package.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.pkg.bluejeans</string>
+    <string>com.github.hitachivantara.pkg.sublimetext4</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>BlueJeans 3</string>
+      <string>Sublime Text 4</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>1.4.0</string>
+    <string>1.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.download.bluejeans</string>
+    <string>com.github.hitachivantara.download.sublimetext4</string>
     <key>Process</key>
     <array>
       <dict>
@@ -22,10 +22,10 @@
         <string>Versioner</string>
         <key>Arguments</key>
         <dict>
+          <key>input_plist_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%/Sublime Text.app/Contents/Info.plist</string>
           <key>plist_version_key</key>
           <string>CFBundleShortVersionString</string>
-          <key>input_plist_path</key>
-          <string>%RECIPE_CACHE_DIR%/unpack/BlueJeans.app/Contents/Info.plist</string>
         </dict>
       </dict>
       <dict>
@@ -33,21 +33,10 @@
         <string>AppPkgCreator</string>
         <key>Arguments</key>
         <dict>
+          <key>app_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%/Sublime Text.app</string>
           <key>pkg_path</key>
           <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-          <key>app_path</key>
-          <string>%RECIPE_CACHE_DIR%/unpack/BlueJeans.app</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>Processor</key>
-        <string>PathDeleter</string>
-        <key>Arguments</key>
-        <dict>
-          <key>path_list</key>
-          <array>
-            <string>%RECIPE_CACHE_DIR%/unpack</string>
-          </array>
         </dict>
       </dict>
     </array>

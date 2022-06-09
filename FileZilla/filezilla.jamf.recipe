@@ -3,22 +3,22 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Packages the latest version of FileZilla Client.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.filezilla</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>WhatsApp</string>
+      <string>FileZilla Client</string>
       <key>prod_name</key>
       <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <string>Utilities</string>
     </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.hitachivantara.pkg.filezilla</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
-    <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
     <key>Process</key>
     <array>
       <dict>

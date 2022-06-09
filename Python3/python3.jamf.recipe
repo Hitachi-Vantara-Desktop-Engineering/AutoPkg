@@ -3,22 +3,20 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Downloads latest version of Python.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.python3</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>WhatsApp</string>
-      <key>prod_name</key>
-      <string>%NAME%</string>
+      <string>Python 3</string>
       <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <string>Developer Tools</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
+    <string>com.github.hitachivantara.pkg.python3</string>
     <key>Process</key>
     <array>
       <dict>
@@ -35,6 +33,8 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
         </dict>
       </dict>
     </array>

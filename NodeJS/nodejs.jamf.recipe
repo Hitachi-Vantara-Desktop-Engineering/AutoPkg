@@ -3,22 +3,20 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Downloads latest version of Node.js.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.nodejs</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>WhatsApp</string>
-      <key>prod_name</key>
-      <string>%NAME%</string>
+      <string>Node.js</string>
       <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <string>Developer Tools</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
+    <string>com.github.hitachivantara.pkg.nodejs</string>
     <key>Process</key>
     <array>
       <dict>
@@ -26,7 +24,7 @@
         <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
         <key>Arguments</key>
         <dict>
-          <key>category</key>
+          <key>CATEGORY</key>
           <string>%CATEGORY%</string>
         </dict>
         <key>Processor</key>
@@ -35,6 +33,8 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
         </dict>
       </dict>
     </array>

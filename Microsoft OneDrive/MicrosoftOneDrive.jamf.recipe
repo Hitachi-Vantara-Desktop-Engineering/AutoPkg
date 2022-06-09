@@ -3,22 +3,26 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Downloads latest version of Microsoft OneDrive.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.microsoft.onedrive</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>WhatsApp</string>
+      <string>Microsoft OneDrive</string>
+      <key>VENDOR</key>
+      <string>Microsoft</string>
+      <key>SOFTWARETITLE</key>
+      <string>OneDrive</string>
       <key>prod_name</key>
       <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <string>Microsoft Office</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
+    <string>com.github.hitachivantara.pkg.microsoft.onedrive</string>
     <key>Process</key>
     <array>
       <dict>
@@ -35,6 +39,8 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
         </dict>
       </dict>
     </array>

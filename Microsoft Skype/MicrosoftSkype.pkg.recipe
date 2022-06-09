@@ -3,18 +3,22 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Downloads latest version of BlueJeans.</string>
+    <string>Packages latest version of Skype.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.pkg.bluejeans</string>
+    <string>com.github.hitachivantara.pkg.microsoft.skype</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>BlueJeans 3</string>
+      <string>Microsoft Skype</string>
+      <key>VENDOR</key>
+      <string>Microsoft</string>
+      <key>SOFTWARETITLE</key>
+      <string>Skype</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.download.bluejeans</string>
+    <string>com.github.hitachivantara.download.microsoft.skype</string>
     <key>Process</key>
     <array>
       <dict>
@@ -22,10 +26,10 @@
         <string>Versioner</string>
         <key>Arguments</key>
         <dict>
-          <key>plist_version_key</key>
-          <string>CFBundleShortVersionString</string>
           <key>input_plist_path</key>
-          <string>%RECIPE_CACHE_DIR%/unpack/BlueJeans.app/Contents/Info.plist</string>
+          <string>%pathname%/Skype.app/Contents/Info.plist</string>
+          <key>plist_version_key</key>
+          <string>CFBundleVersion</string>
         </dict>
       </dict>
       <dict>
@@ -33,21 +37,10 @@
         <string>AppPkgCreator</string>
         <key>Arguments</key>
         <dict>
+          <key>app_path</key>
+          <string>%pathname%/Skype.app</string>
           <key>pkg_path</key>
           <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-          <key>app_path</key>
-          <string>%RECIPE_CACHE_DIR%/unpack/BlueJeans.app</string>
-        </dict>
-      </dict>
-      <dict>
-        <key>Processor</key>
-        <string>PathDeleter</string>
-        <key>Arguments</key>
-        <dict>
-          <key>path_list</key>
-          <array>
-            <string>%RECIPE_CACHE_DIR%/unpack</string>
-          </array>
         </dict>
       </dict>
     </array>

@@ -3,22 +3,22 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Packages the latest version of KeePassX.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.KeePassX</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>WhatsApp</string>
+      <string>KeePassX</string>
       <key>prod_name</key>
       <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <string>Utilities</string>
     </dict>
+    <key>ParentRecipe</key>
+    <string>com.github.hitachivantara.pkg.KeePassX</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
-    <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
     <key>Process</key>
     <array>
       <dict>
@@ -35,6 +35,17 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>PathDeleter</string>
+        <key>Arguments</key>
+        <dict>
+          <key>path_list</key>
+          <array>
+            <string>%RECIPE_CACHE_DIR%/payload</string>
+          </array>
         </dict>
       </dict>
     </array>

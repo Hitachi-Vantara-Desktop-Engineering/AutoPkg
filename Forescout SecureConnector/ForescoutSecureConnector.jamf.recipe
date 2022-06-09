@@ -3,22 +3,22 @@
 <plist version="1.0">
   <dict>
     <key>Description</key>
-    <string>Uploads latest version of WhatsApp.</string>
+    <string>Uploads latest version of ForeScout SecureConnector.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.whatsapp</string>
+    <string>com.github.hitachivantara.jamf.forescout.secureconnector</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>WhatsApp</string>
+      <string>ForeScout SecureConnector</string>
       <key>prod_name</key>
       <string>%NAME%</string>
-      <key>CATEGORY</key>
-      <string>Social Networking</string>
+      <key>category</key>
+      <string>Utilities</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.whatsapp</string>
+    <string>com.github.hitachivantara.pkg.forescout.secureconnector</string>
     <key>Process</key>
     <array>
       <dict>
