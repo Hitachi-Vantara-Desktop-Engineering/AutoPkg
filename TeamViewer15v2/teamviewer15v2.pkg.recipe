@@ -36,7 +36,7 @@
                 <key>pkg_payload_path</key>
                 <string>%RECIPE_CACHE_DIR%/unpack/TeamViewerApp.pkg/Payload</string>
                 <key>destination_path</key>
-                <string>%RECIPE_CACHE_DIR%/Payload/</string>
+                <string>%RECIPE_CACHE_DIR%/payload/</string>
             </dict>
         </dict>
         <dict>
@@ -44,6 +44,8 @@
             <string>Versioner</string>
             <key>Arguments</key>
             <dict>
+                <key>plist_version_key</key>
+                <string>CFBundleVersion</string>
                 <key>input_plist_path</key>
                 <string>%RECIPE_CACHE_DIR%/payload/TeamViewer.app/Contents/Info.plist</string>
             </dict>
@@ -57,6 +59,18 @@
                 <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
                 <key>app_path</key>
                 <string>%pathname%/Install TeamViewer.app</string>
+            </dict>
+        </dict>
+        <dict>
+            <key>Processor</key>
+            <string>PathDeleter</string>
+            <key>Arguments</key>
+            <dict>
+                <key>path_list</key>
+                <array>
+                    <string>%RECIPE_CACHE_DIR%/unpack</string>
+                    <string>%RECIPE_CACHE_DIR%/payload</string>
+                </array>
             </dict>
         </dict>
     </array>
