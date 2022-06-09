@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Packages latest version of Skype.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.pkg.skype</string>
+    <string>com.github.hitachivantara.pkg.microsoft.skype</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.download.skype</string>
+    <string>com.github.hitachivantara.download.microsoft.skype</string>
     <key>Process</key>
     <array>
         <dict>
@@ -28,6 +28,8 @@
             <dict>
                 <key>input_plist_path</key>
                 <string>%pathname%/Skype.app/Contents/Info.plist</string>
+                <key>plist_version_key</key>
+                <string>CFBundleVersion</string>
             </dict>
         </dict>
         <dict>
