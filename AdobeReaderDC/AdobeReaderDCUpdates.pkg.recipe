@@ -17,7 +17,33 @@
     <string>com.github.hitachivantara.download.adobereaderdcupdates</string>
     <key>Process</key>
     <array>
-            <dict>
+      <dict>
+        <key>Arguments</key>
+        <dict>
+          <key>purge_destination</key>
+          <true/>
+          <key>destination_path</key>
+          <string>%RECIPE_CACHE_DIR%/unpack</string>
+          <key>flat_pkg_path</key>
+          <string>%pathname%/*.pkg</string>
+        </dict>
+        <key>Processor</key>
+        <string>FlatPkgUnpacker</string>
+      </dict>
+      <dict>
+        <key>Arguments</key>
+        <dict>
+          <key>purge_destination</key>
+          <true/>
+          <key>destination_path</key>
+          <string>%RECIPE_CACHE_DIR%/payload</string>
+          <key>pkg_payload_path</key>
+          <string>%RECIPE_CACHE_DIR%/unpack/*.pkg/Payload</string>
+        </dict>
+        <key>Processor</key>
+        <string>PkgPayloadUnpacker</string>
+      </dict>
+      <dict>
         <key>Processor</key>
         <string>Versioner</string>
         <key>Arguments</key>
