@@ -5,11 +5,11 @@
     <key>Description</key>
     <string>Downloads latest version of Sublime Text.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.jamf.sublimetext</string>
+    <string>com.github.hitachivantara.jamf.sublimetext4</string>
     <key>Input</key>
     <dict>
       <key>NAME</key>
-      <string>Sublime Text 3</string>
+      <string>Sublime Text 4</string>
       <key>prod_name</key>
       <string>%NAME%</string>
       <key>CATEGORY</key>
@@ -18,7 +18,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.sublimetext</string>
+    <string>com.github.hitachivantara.pkg.sublimetext4</string>
     <key>Process</key>
     <array>
       <dict>
@@ -36,7 +36,7 @@
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
           <key>pkg_path</key>
-          <string>%RECIPE_CACHE_DIR%/%NAME%-%match%.pkg</string>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
         </dict>
       </dict>
     </array>
