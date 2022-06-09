@@ -1,19 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
+  <dict>
     <key>Description</key>
     <string>Uploads latest version of BlueJeans.</string>
     <key>Identifier</key>
     <string>com.github.hitachivantara.jamf.bluejeans</string>
     <key>Input</key>
     <dict>
-       <key>NAME</key>
-       <string>BlueJeans</string>
-       <key>prod_name</key>
-       <string>%NAME%</string>
-       <key>CATEGORY</key>
-       <string>Social Networking</string>
+      <key>NAME</key>
+      <string>BlueJeans</string>
+      <key>CATEGORY</key>
+      <string>Social Networking</string>
     </dict>
     <key>ParentRecipe</key>
     <string>com.github.hitachivantara.pkg.bluejeans</string>
@@ -40,5 +38,5 @@
         </dict>
       </dict>
     </array>
-</dict>
+  </dict>
 </plist>
