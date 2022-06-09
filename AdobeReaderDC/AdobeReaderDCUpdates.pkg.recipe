@@ -25,7 +25,7 @@
           <key>plist_version_key</key>
           <string>CFBundleVersion</string>
           <key>input_plist_path</key>
-          <string>%RECIPE_CACHE_DIR%/%NAME%.dmg/*.pkg/tmp/webinstaller/RdrServicesUpdater.app/Contents/Info.plist</string>
+          <string>%pathname%/*.pkg/tmp/webinstaller/RdrServicesUpdater.app/Contents/Info.plist</string>
         </dict>
       </dict>
       <dict>
