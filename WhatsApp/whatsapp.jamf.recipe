@@ -12,7 +12,7 @@
       <string>WhatsApp</string>
       <key>prod_name</key>
       <string>%NAME%</string>
-      <key>category</key>
+      <key>CATEGORY</key>
       <string>Social Networking</string>
     </dict>
     <key>MinimumVersion</key>
