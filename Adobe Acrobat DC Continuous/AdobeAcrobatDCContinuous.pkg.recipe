@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads the current Adobe Acrobat Reader DC pkg and repackages, replacing a problematic preinstall script,and enabling installation on non-boot volumes.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.download.acrobatdc</string>
+    <string>com.github.hitachivantara.pkg.acrobatdc</string>
     <key>Input</key>
     <dict>
       <key>LANGUAGE</key>
