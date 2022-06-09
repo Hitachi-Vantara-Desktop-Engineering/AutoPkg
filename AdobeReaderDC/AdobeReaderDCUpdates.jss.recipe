@@ -9,11 +9,11 @@
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>Adobe Acrobat Reader DC Updater</string>
+       <string>Adobe Acrobat Reader DC Continuous</string>
        <key>VENDOR</key>
        <string>Adobe</string>
        <key>SOFTWARETITLE</key>
-       <string>Adobe Acrobat Reader DC Updater</string>
+       <string>Adobe Acrobat Reader DC Continuous</string>
        <key>prod_name</key>
        <string>%NAME%</string>
        <key>CATEGORY</key>
