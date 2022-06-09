@@ -12,34 +12,36 @@
       <string>Adobe Acrobat Reader DC Continuous</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>0.5.0</string>
+    <string>0.4.0</string>
     <key>ParentRecipe</key>
     <string>com.github.hitachivantara.download.adobereaderdcupdates</string>
     <key>Process</key>
     <array>
       <dict>
+        <key>Processor</key>
+        <string>Unarchiver</string>
+        <key>Arguments</key>
         <dict>
-          <key>Processor</key>
-          <string>Unarchiver</string>
-          <key>Arguments</key>
-          <dict>
-            <key>archive_path</key>
-            <string>%pathname%</string>
-            <key>destination_path</key>
-            <string>%RECIPE_CACHE_DIR%/unpack</string>
-          </dict>
+          <key>archive_path</key>
+          <string>%pathname%</string>
+          <key>destination_path</key>
+          <string>%RECIPE_CACHE_DIR%/unpack</string>
         </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>Versioner</string>
+        <key>Arguments</key>
         <dict>
-          <key>Processor</key>
-          <string>Versioner</string>
-          <key>Arguments</key>
-          <dict>
-            <key>plist_version_key</key>
-            <string>CFBundleVersion</string>
-            <key>input_plist_path</key>
-            <string>%RECIPE_CACHE_DIR%/unpack/tmp/webinstaller/RdrServicesUpdater.app/Contents/Info.plist</string>
-          </dict>
+          <key>plist_version_key</key>
+          <string>CFBundleVersion</string>
+          <key>input_plist_path</key>
+          <string>%RECIPE_CACHE_DIR%/unpack/tmp/webinstaller/RdrServicesUpdater.app/Contents/Info.plist</string>
         </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>PkgCopier</string>
         <key>Arguments</key>
         <dict>
           <key>pkg_path</key>
@@ -47,8 +49,6 @@
           <key>source_pkg</key>
           <string>%pathname%/*.pkg</string>
         </dict>
-        <key>Processor</key>
-        <string>PkgCopier</string>
       </dict>
     </array>
   </dict>
