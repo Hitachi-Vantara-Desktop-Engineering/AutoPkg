@@ -53,7 +53,7 @@
             <key>Arguments</key>
             <dict>
                 <key>plist_version_key</key>
-                <string>CFBundleVersion</string>
+                <string>CFBundleGetInfoString</string>
                 <key>input_plist_path</key>
                 <string>%RECIPE_CACHE_DIR%/payload/Microsoft Teams.app/Contents/Info.plist</string>
             </dict>
