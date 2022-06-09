@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
+  <dict>
     <key>Description</key>
     <string>Downloads latest version of BlueJeans.</string>
     <key>Identifier</key>
     <string>com.github.hitachivantara.pkg.bluejeans</string>
     <key>Input</key>
     <dict>
-       <key>NAME</key>
-       <string>BlueJeans 3</string>
+      <key>NAME</key>
+      <string>BlueJeans 3</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
@@ -17,28 +17,39 @@
     <string>com.github.hitachivantara.download.bluejeans</string>
     <key>Process</key>
     <array>
-<dict>
-            <key>Processor</key>
-            <string>AppPkgCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>pkg_path</key>
-                <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
-                <key>app_path</key>
-                <string>%RECIPE_CACHE_DIR%/unpack/BlueJeans.app</string>
-            </dict>
-        </dict>
+      <dict>
+        <key>Processor</key>
+        <string>Versioner</string>
+        <key>Arguments</key>
         <dict>
-            <key>Processor</key>
-            <string>PathDeleter</string>
-            <key>Arguments</key>
-            <dict>
-                <key>path_list</key>
-                <array>
-                    <string>%RECIPE_CACHE_DIR%/unpack</string>
-                </array>
-            </dict>
+          <key>plist_version_key</key>
+          <string>CFBundleShortVersionString</string>
+          <key>input_plist_path</key>
+          <string>%RECIPE_CACHE_DIR%/unpack/BlueJeans.app/Contents/Info.plist</string>
         </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>AppPkgCreator</string>
+        <key>Arguments</key>
+        <dict>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
+          <key>app_path</key>
+          <string>%RECIPE_CACHE_DIR%/unpack/BlueJeans.app</string>
+        </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>PathDeleter</string>
+        <key>Arguments</key>
+        <dict>
+          <key>path_list</key>
+          <array>
+            <string>%RECIPE_CACHE_DIR%/unpack</string>
+          </array>
+        </dict>
+      </dict>
     </array>
-</dict>
+  </dict>
 </plist>
