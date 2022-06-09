@@ -22,7 +22,7 @@
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>ParentRecipe</key>
-    <string>com.github.hitachivantara.pkg.adobereaderdc.updates</string>
+    <string>com.github.hitachivantara.pkg.adobereaderdcupdates</string>
     <key>Process</key>
     <array>
         <dict>
