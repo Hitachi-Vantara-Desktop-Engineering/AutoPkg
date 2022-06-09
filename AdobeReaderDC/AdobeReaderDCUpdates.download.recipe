@@ -2,39 +2,46 @@
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
   <dict>
-    <key>Comment</key>
-    <string>For OS_VERSION, 'Mac OS 10.14.0' or 'Mac OS 10.15.0' are valid, not 10.14 or 10.15</string>
     <key>Description</key>
-    <string>Downloads the latest Adobe Acrobat Reader DC.</string>
+    <string>Downloads updates for Acrobat Reader DC. Set MAJOR_VERSION to "Acrobat2015" to download the 'Classic Track' updates for acrobat DC instead of the Continuous track.</string>
     <key>Identifier</key>
     <string>com.github.hitachivantara.download.adobereaderdc</string>
     <key>Input</key>
     <dict>
+      <key>LANGUAGE</key>
+      <string>English</string>
+      <key>MAJOR_VERSION</key>
+      <string>AcrobatDC</string>
       <key>NAME</key>
-      <string>AdobeReaderDC</string>
+      <string>Acrobat Reader DC Updates</string>
       <key>OS_VERSION</key>
-      <string>Mac OS 10.14.0</string>
+      <string>10.13.0</string>
     </dict>
     <key>MinimumVersion</key>
-    <string>1.4</string>
+    <string>0.3.1</string>
     <key>Process</key>
     <array>
       <dict>
         <key>Arguments</key>
         <dict>
+          <key>language</key>
+          <string>%LANGUAGE%</string>
+          <key>major_version</key>
+          <string>%MAJOR_VERSION%</string>
           <key>os_version</key>
           <string>%OS_VERSION%</string>
         </dict>
         <key>Processor</key>
-        <string>AdobeReaderURLProvider</string>
+        <string>com.github.autopkg.novaksam-recipes.Processors/AdobeAcrobatReaderDcUpdateInfoProvider</string>
       </dict>
       <dict>
+        <key>Arguments</key>
+        <dict>
+          <key>filename</key>
+          <string>%NAME%.dmg</string>
+        </dict>
         <key>Processor</key>
         <string>URLDownloader</string>
-      </dict>
-      <dict>
-        <key>Processor</key>
-        <string>EndOfCheckPhase</string>
       </dict>
       <dict>
         <key>Arguments</key>
@@ -50,6 +57,10 @@
         </dict>
         <key>Processor</key>
         <string>CodeSignatureVerifier</string>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>EndOfCheckPhase</string>
       </dict>
     </array>
   </dict>
