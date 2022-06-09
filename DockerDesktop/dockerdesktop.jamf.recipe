@@ -18,7 +18,7 @@
       <string>Developer Tools</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>com.github.homebysix.pkg.DockerDesktop</string>
+    <string>com.github.hitachivantara.pkg.dockerdesktop</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>
