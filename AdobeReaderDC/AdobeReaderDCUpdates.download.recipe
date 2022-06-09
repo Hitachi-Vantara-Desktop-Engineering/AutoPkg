@@ -5,7 +5,7 @@
     <key>Description</key>
     <string>Downloads updates for Acrobat Reader DC. Set MAJOR_VERSION to "Acrobat2015" to download the 'Classic Track' updates for acrobat DC instead of the Continuous track.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.download.adobereaderdc.updates</string>
+    <string>com.github.hitachivantara.download.adobereaderdcupdates</string>
     <key>Input</key>
     <dict>
       <key>LANGUAGE</key>
