@@ -17,18 +17,7 @@
     <string>com.github.hitachivantara.download.airtame</string>
     <key>Process</key>
     <array>
-        <dict>
-            <key>Processor</key>
-            <string>Versioner</string>
-            <key>Arguments</key>
-            <dict>
-                <key>plist_version_key</key>
-                <string>CFBundleGetInfoString</string>
-                <key>input_plist_path</key>
-                <string>%pathname%/Airtame.app/Contents/Info.plist</string>
-            </dict>
-        </dict>
-        <dict>
+                <dict>
             <key>Processor</key>
             <string>AppPkgCreator</string>
             <key>Arguments</key>
