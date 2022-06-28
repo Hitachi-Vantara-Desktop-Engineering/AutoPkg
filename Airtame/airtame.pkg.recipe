@@ -24,6 +24,8 @@
             <dict>
                 <key>app_path</key>
                 <string>%pathname%/Airtame.app</string>
+                <key>version</key>
+                <string>CFBundleVersion</string>
             </dict>
         </dict>
     </array>
