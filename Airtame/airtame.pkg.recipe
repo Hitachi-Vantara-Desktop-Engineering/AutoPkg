@@ -1,15 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
 <plist version="1.0">
-<dict>
+  <dict>
     <key>Description</key>
     <string>Packages latest version of Airtame.</string>
     <key>Identifier</key>
     <string>com.github.hitachivantara.pkg.airtame</string>
     <key>Input</key>
     <dict>
-       <key>NAME</key>
-       <string>Airtame</string>
+      <key>NAME</key>
+      <string>Airtame</string>
     </dict>
     <key>MinimumVersion</key>
     <string>2.1</string>
@@ -17,17 +17,28 @@
     <string>com.github.hitachivantara.download.airtame</string>
     <key>Process</key>
     <array>
-                <dict>
-            <key>Processor</key>
-            <string>AppPkgCreator</string>
-            <key>Arguments</key>
-            <dict>
-                <key>app_path</key>
-                <string>%pathname%/Airtame.app</string>
-                <key>version</key>
-                <string>%version%</string>
-            </dict>
+      <dict>
+        <key>Processor</key>
+        <string>Versioner</string>
+        <key>Arguments</key>
+        <dict>
+          <key>plist_version_key</key>
+          <string>CFBundleGetInfoString</string>
+          <key>input_plist_path</key>
+          <string>%RECIPE_CACHE_DIR%/payload/Applications/Airtame.app/Contents/Info.plist</string>
         </dict>
+      </dict>
+      <dict>
+        <key>Processor</key>
+        <string>AppPkgCreator</string>
+        <key>Arguments</key>
+        <dict>
+          <key>app_path</key>
+          <string>%pathname%/Airtame.app</string>
+          <key>version</key>
+          <string>%version%</string>
+        </dict>
+      </dict>
     </array>
-</dict>
+  </dict>
 </plist>
