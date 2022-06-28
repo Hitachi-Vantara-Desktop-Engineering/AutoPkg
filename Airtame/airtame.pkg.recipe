@@ -25,7 +25,7 @@
           <key>plist_version_key</key>
           <string>CFBundleGetInfoString</string>
           <key>input_plist_path</key>
-          <string>%RECIPE_CACHE_DIR%/payload/Applications/Airtame.app/Contents/Info.plist</string>
+          <string>%pathname%/Airtame.app/Contents/Info.plist</string>
         </dict>
       </dict>
       <dict>
