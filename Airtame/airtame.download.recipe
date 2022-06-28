@@ -43,7 +43,7 @@
         <key>Arguments</key>
         <dict>
           <key>plist_version_key</key>
-          <string>CFBundleGetInfoString</string>
+          <string>CFBundleVersion</string>
           <key>input_plist_path</key>
           <string>%pathname%/Airtame.app/Contents/Info.plist</string>
         </dict>
