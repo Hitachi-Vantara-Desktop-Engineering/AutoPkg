@@ -12,7 +12,7 @@
       <string>Airtame</string>
       <key>prod_name</key>
       <string>%NAME%</string>
-      <key>category</key>
+      <key>CATEGORY</key>
       <string>Utilities</string>
     </dict>
     <key>ParentRecipe</key>

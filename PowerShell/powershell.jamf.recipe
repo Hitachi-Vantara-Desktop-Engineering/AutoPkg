@@ -26,8 +26,6 @@
         <dict>
           <key>category</key>
           <string>%CATEGORY%</string>
-          <key>pkg_path</key>
-          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
         </dict>
         <key>Processor</key>
         <string>com.github.grahampugh.jamf-upload.processors/JamfCategoryUploader</string>
@@ -42,6 +40,8 @@
         <dict>
           <key>pkg_category</key>
           <string>%CATEGORY%</string>
+          <key>pkg_path</key>
+          <string>%RECIPE_CACHE_DIR%/%NAME%-%version%.pkg</string>
         </dict>
       </dict>
     </array>
