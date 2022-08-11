@@ -14,7 +14,7 @@
     <key>MinimumVersion</key>
     <string>0.2.0</string>
     <key>ParentRecipe</key>
-    <string>io.github.hjuutilainen.download.TeamViewer</string>
+    <string>com.github.hitachivantara.download.TeamViewer15</string>
     <key>Process</key>
     <array>
       <dict>
