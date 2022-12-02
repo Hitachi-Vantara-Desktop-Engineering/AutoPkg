@@ -21,9 +21,9 @@
             <key>Arguments</key>
             <dict>
                 <key>url</key>
-                <string>https://go.microsoft.com/fwlink/?LinkID=620882</string>
+                <string>https://go.microsoft.com/fwlink/?linkid=2156837</string>
                 <key>filename</key>
-                <string>vscode.zip</string>
+                <string>VSCode-darwin-universal.zip</string>
             </dict>
         </dict>
         <dict>
