@@ -5,11 +5,11 @@
     <key>Description</key>
     <string>Downloads latest version of Virtual Box.</string>
     <key>Identifier</key>
-    <string>com.github.hitachivantara.download.virtualbox61</string>
+    <string>com.github.hitachivantara.download.virtualbox70</string>
     <key>Input</key>
     <dict>
        <key>NAME</key>
-       <string>VirtualBox 6.1</string>
+       <string>VirtualBox 7.0</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
