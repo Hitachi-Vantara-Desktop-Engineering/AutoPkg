@@ -13,7 +13,7 @@
       <key>prod_name</key>
       <string>%NAME%</string>
       <key>CATEGORY</key>
-      <string>Developer Tools</string>
+      <string>Virtualization</string>
     </dict>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
