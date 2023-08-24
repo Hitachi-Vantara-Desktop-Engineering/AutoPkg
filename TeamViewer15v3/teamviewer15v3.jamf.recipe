@@ -16,7 +16,7 @@
       <string>Utilities</string>
     </dict>
     <key>ParentRecipe</key>
-    <string>munkitest-hv.pkg.TeamViewer15v3</string>
+    <string>com.github.hitachivantara.pkg.TeamViewer15v3</string>
     <key>MinimumVersion</key>
     <string>1.4.0</string>
     <key>Process</key>
